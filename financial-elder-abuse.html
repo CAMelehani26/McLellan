@@ -619,6 +619,45 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
   font-family:'Barlow',sans-serif; font-size:15px; font-weight:700; text-decoration:none;
 }
 .mlg-salto:focus { left:0; }
+
+/* NOTABLE RESULTS */
+.notable-results { background:#fbf6ef; padding:64px 28px; }
+@media(min-width:769px) { .notable-results { padding:80px 80px; } }
+.notable-results .section-eyebrow { color:#c9a96e; }
+.notable-results h2 {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(28px, 4vw, 42px); font-weight:400; font-style:italic;
+  color:#1e3a3e; margin-bottom:36px;
+}
+.results { max-width:860px; }
+.result-item {
+  border-top:1px solid rgba(30,58,62,0.12);
+  padding:28px 0;
+  display:grid; grid-template-columns:1fr auto; gap:8px 32px;
+}
+.result-item:first-child { border-top:none; }
+.result-item h3 {
+  font-family:'Barlow Condensed',sans-serif; font-weight:800;
+  text-transform:uppercase; letter-spacing:0.5px;
+  font-size:22px; color:#1e3a3e;
+}
+.result-item .tag {
+  font-size:10px; letter-spacing:2px; text-transform:uppercase;
+  color:#8a6d43; font-weight:600; align-self:start; padding-top:6px;
+}
+.result-item p {
+  grid-column:1 / -1;
+  font-size:15px; line-height:1.8; color:rgba(30,58,62,0.65); text-align:left;
+}
+.results-disclaimer {
+  margin-top:24px; padding-top:24px; border-top:1px solid rgba(30,58,62,0.12);
+  font-size:13px; line-height:1.7; font-style:italic; color:rgba(30,58,62,0.5);
+  text-align:left;
+}
+@media(max-width:480px) {
+  .result-item { grid-template-columns:1fr; }
+  .result-item .tag { padding-top:0; }
+}
 </style>
 <script src="/assets/barra-progreso.js" defer></script>
 </head>
@@ -815,6 +854,20 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
       <p class="reveal reveal-d2">Most of the people who contact us about financial elder abuse are not the person whose money is gone. They are a son, a daughter, or a sibling who saw a bank statement that did not make sense. Two questions usually come first. Can you do anything if the accounts are not yours, and what happens to the family if you raise it. Both are worth a conversation before you do anything, including before you confront the person you suspect. Confrontation early often causes records to disappear, and there are better sequences. Tell us what you saw and we will tell you what your options are.</p>
     </div>
 
+  </div>
+</section>
+
+<!-- NOTABLE RESULTS -->
+<section class="notable-results">
+  <div class="section-eyebrow reveal">Track Record</div>
+  <h2 class="reveal reveal-d1">Notable Results</h2>
+  <div class="results">
+    <div class="result-item reveal reveal-d2">
+      <h3>Elder Abuse Restraining Order &amp; Trustee Settlement</h3>
+      <span class="tag">Trust &amp; Probate Litigation</span>
+      <p>Obtained elder financial abuse restraining orders protecting an elderly parent from family members' interference with her finances, then negotiated a settlement placing her trust under an independent trustee.</p>
+    </div>
+    <p class="results-disclaimer">These results are provided for informational purposes only. Prior results do not guarantee a similar outcome, and every matter turns on its own facts and law. Representative matters include results obtained in Mr. McLellan's prior practice.</p>
   </div>
 </section>
 
