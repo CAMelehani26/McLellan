@@ -35,12 +35,30 @@ sin que la deliverability contamine el número.
 | — | Resend: Maybe It's Not Just You | Engaged | — | 7.7% | 0.24% | 3.1% |
 | — | Resend: You Might Be Getting Less Than You Should at Work | Engaged | — | 4.1% | 0.16% | 3.9% |
 
-## Lo que los datos SÍ sostienen
+## CONFIRMADO: la pestaña de Gmail explica las aperturas
+
+Verificado en una casilla real (oct 2026), buscando con `category:promotions`:
+
+| Campaña | Pestaña | Opens |
+|---|---|---:|
+| Nobody **Likes** Being the Employee Who Complains (2 jun) | Principal | 23.1% |
+| Nobody **Wants** to Make Things Worse at Work (24 jun) | Promociones | 9.2% |
+
+Misma lista, construcción de asunto casi idéntica, tres semanas de
+diferencia. La única variable que cambió fue la ubicación en bandeja.
+
+**Consecuencia para leer toda la tabla de arriba:** la tasa de apertura
+viene funcionando como un proxy de la pestaña, no de la calidad del asunto.
+El grupo de ~17-25% son envíos que llegaron a Principal; el de ~9-11%, a
+Promociones. Cualquier conclusión sobre redacción sacada de comparar esos
+dos grupos está midiendo entrega, no copy.
+
+## Lo que los datos SÍ sostienen (además de lo anterior)
 
 **Las aperturas son bimodales.** Los envíos a la audiencia completa caen en
 dos grupos: ~9-11% o ~17-25%. Casi nada en el medio. Una variable continua
 (calidad del asunto) produciría una distribución pareja; una binaria, no.
-El sospechoso natural es la ubicación en bandeja: Principal vs Promociones.
+Confirmado arriba: la causa es la ubicación en bandeja.
 
 **La prueba más fuerte de eso:** "Nobody Likes Being the Employee Who
 Complains" sacó 23.1% el 2 de junio. "Nobody Wants to Make Things Worse at
@@ -68,8 +86,21 @@ Complains", 23.1%).
 
 No hay evidencia de que la fórmula del asunto explique las aperturas.
 
-## Qué haría falta para saber
+## Prioridad de trabajo
 
-- Inbox placement por envío (Principal vs Promociones). Es la hipótesis viva.
-- Si el tracking de clics estuvo activo o no en cada envío: cambia el número.
-- Día y hora exactos: casi todos son martes 18:00, poca variación para medir.
+1. **Apagar el tracking de clics.** Reescribe todos los links a un dominio
+   de Mailchimp; es la señal de "envío masivo" más fuerte del mail. Costo:
+   se pierde la métrica de clics, que con 3-10 clics por campaña no alcanza
+   para concluir nada igual.
+2. **Autenticar langefirm.com** en Mailchimp (registros CNAME en el DNS).
+3. **From name de persona**, no del estudio. Reply-to a una casilla leída.
+4. **Sacar el botón** del template: rectángulo navy con texto en mayúsculas
+   es el patrón visual de promoción. Reemplazar por link de texto.
+
+NO apagar el tracking de aperturas: es la única métrica que queda para
+medir si lo anterior funciona.
+
+## Pendiente de registrar
+
+- Columna de pestaña (Principal/Promociones) en cada envío nuevo.
+- Si el tracking de clics estuvo activo en todos los envíos del historial.
