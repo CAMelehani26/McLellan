@@ -530,8 +530,105 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
     display:block; margin:14px 0 0; font-size:15px; font-weight:600; color:#6b7c7e;
   }
 }
+
+/* NOTABLE RESULTS */
+.notable-results { background:#fbf6ef; padding:64px 28px; }
+@media(min-width:769px) { .notable-results { padding:80px 80px; } }
+.notable-results .section-eyebrow { color:#c9a96e; }
+.notable-results h2 {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(28px, 4vw, 42px); font-weight:400; font-style:italic;
+  color:#1e3a3e; margin-bottom:36px;
+}
+.results { max-width:860px; }
+.result-item {
+  border-top:1px solid rgba(30,58,62,0.12);
+  padding:28px 0;
+  display:grid; grid-template-columns:1fr auto; gap:8px 32px;
+}
+.result-item:first-child { border-top:none; }
+.result-item h3 {
+  font-family:'Barlow Condensed',sans-serif; font-weight:800;
+  text-transform:uppercase; letter-spacing:0.5px;
+  font-size:22px; color:#1e3a3e;
+}
+.result-item .tag {
+  font-size:10px; letter-spacing:2px; text-transform:uppercase;
+  color:#8a6d43; font-weight:600; align-self:start; padding-top:6px;
+}
+.result-item p {
+  grid-column:1 / -1;
+  font-size:15px; line-height:1.8; color:rgba(30,58,62,0.65); text-align:left;
+}
+.results-disclaimer {
+  margin-top:24px; padding-top:24px; border-top:1px solid rgba(30,58,62,0.12);
+  font-size:13px; line-height:1.7; font-style:italic; color:rgba(30,58,62,0.5);
+  text-align:left;
+}
+@media(max-width:480px) {
+  .result-item { grid-template-columns:1fr; }
+  .result-item .tag { padding-top:0; }
+}
 </style>
 <script src="/assets/barra-progreso.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mclellanlawgroup.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Real Estate Litigation",
+      "item": "https://www.mclellanlawgroup.com/real-estate-litigation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Easement & Boundary Disputes",
+      "item": "https://www.mclellanlawgroup.com/easement-boundary-disputes"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Easement & Boundary Disputes",
+  "serviceType": "Easement & Boundary Disputes",
+  "url": "https://www.mclellanlawgroup.com/easement-boundary-disputes",
+  "provider": {
+    "@type": "LegalService",
+    "name": "McLellan Law Group LLP",
+    "url": "https://www.mclellanlawgroup.com"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Saratoga"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Santa Clara County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Silicon Valley"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Bay Area"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="mlg-salto" href="#contenido">Skip to content</a>
@@ -817,6 +914,19 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
 </section>
 
 <!-- CTA BANNER -->
+<section class="notable-results">
+  <div class="section-eyebrow reveal">Track Record</div>
+  <h2 class="reveal reveal-d1">Notable Results</h2>
+  <div class="results">
+    <div class="result-item reveal reveal-d2">
+      <h3>Oceanfront Easement Settlement</h3>
+      <span class="tag">Real Estate Litigation</span>
+      <p>Secured a settlement for an oceanfront property owner in an easement and quiet title dispute, obtaining the neighbor's agreement to rescind a recorded notice of permissive use and confirm the client's continued use of the shared driveway.</p>
+    </div>
+    <p class="results-disclaimer">These results are provided for informational purposes only. Prior results do not guarantee a similar outcome, and every matter turns on its own facts and law. Representative matters include results obtained in Mr. McLellan's prior practice.</p>
+  </div>
+</section>
+
 <section class="emp-testimonials">
   <div class="section-eyebrow reveal">Client Reviews</div>
   <h2 class="reveal reveal-d1">What Our Clients Say</h2>
