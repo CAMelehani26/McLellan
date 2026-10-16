@@ -280,6 +280,26 @@ a.btn-outline-gold {
 }
 a.btn-outline-gold:hover { background:#264a4f !important; background-color:#264a4f !important; transform:translateY(-1px); }
 
+/* ══ NOTABLE RESULTS ══ */
+.home-results { padding:48px 20px; background:#fff; }
+.home-results-inner { max-width:960px; margin:0 auto; }
+.home-results .section-header h2 { color:#1e3a3e !important; }
+.results-grid-home { display:grid; grid-template-columns:1fr; gap:16px; margin-top:28px; }
+.result-card-home {
+  background:#fbf6ef; border-radius:16px; padding:28px 24px;
+  border:1px solid rgba(30,58,62,0.08);
+}
+.result-card-home .tag { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#c9a96e; font-weight:600; display:block; margin-bottom:12px; }
+.result-card-home h3 { font-size:19px; font-weight:800; color:#1e3a3e; margin-bottom:10px; line-height:1.3; }
+.result-card-home p { font-size:14px; line-height:1.65; color:rgba(30,58,62,0.7); }
+@media(min-width:769px) {
+  .home-results { padding:72px 32px; }
+  .results-grid-home { grid-template-columns:1fr 1fr; gap:20px; }
+  .result-card-home { padding:32px 28px; }
+  .result-card-home h3 { font-size:21px; }
+  .result-card-home p { font-size:15px; }
+}
+
 /* ══ TESTIMONIALS ══ */
 .testimonials { padding:48px 20px; background:#faf8f3; }
 .testimonials-inner { max-width:960px; margin:0 auto; }
@@ -669,6 +689,39 @@ a.btn-outline-gold:hover { background:#264a4f !important; background-color:#264a
       </a>
     </div>
     <a href="subscription-plans.html" class="btn-outline-gold fade fade-d2">View All Plans →</a>
+  </div>
+</section>
+
+<!-- NOTABLE RESULTS -->
+<section class="home-results">
+  <div class="home-results-inner">
+    <div class="section-header fade">
+      <div class="eyebrow">Track Record</div>
+      <h2>Notable Results</h2>
+    </div>
+    <div class="results-grid-home">
+      <div class="result-card-home pop">
+        <span class="tag">Business Litigation</span>
+        <h3>Appellate Fee Award Reversal</h3>
+        <p>Won reversal on appeal of a nearly $700,000 attorneys' fee award entered against a limited partner in a real estate development partnership.</p>
+      </div>
+      <div class="result-card-home pop fade-d1">
+        <span class="tag">Trust &amp; Probate Litigation</span>
+        <h3>Wrongful Death Settlement Approval</h3>
+        <p>Obtained probate court approval of a multimillion-dollar wrongful death settlement paid from a trust, along with approval of the special trustee's acts, fees, and resignation.</p>
+      </div>
+      <div class="result-card-home pop fade-d2">
+        <span class="tag">Employment Law</span>
+        <h3>Pregnancy Discrimination Severance Increase</h3>
+        <p>Increased a laid-off employee's severance by more than 80 percent, resolving her pregnancy discrimination and leave retaliation claims before litigation.</p>
+      </div>
+      <div class="result-card-home pop fade-d3">
+        <span class="tag">Business Litigation</span>
+        <h3>Commercial Lease Trial Victory</h3>
+        <p>Tried a multi-day commercial lease bench trial for a small business tenant, securing a judgment awarding the tenant its attorneys' fees and costs as the prevailing party.</p>
+      </div>
+    </div>
+    <p class="results-disclaimer" style="margin-top:20px; font-size:13px; font-style:italic; color:rgba(30,58,62,0.5); text-align:left;">These results are provided for informational purposes only. Prior results do not guarantee a similar outcome, and every matter turns on its own facts and law. Representative matters include results obtained in prior practice.</p>
   </div>
 </section>
 
