@@ -545,34 +545,26 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
   font-size:clamp(28px, 4vw, 42px); font-weight:400; font-style:italic;
   color:#1e3a3e; margin-bottom:36px;
 }
-.results { max-width:860px; }
-.result-item {
-  border-top:1px solid rgba(30,58,62,0.12);
-  padding:28px 0;
-  display:grid; grid-template-columns:1fr auto; gap:8px 32px;
+.results { max-width:none; }
+.results-grid {
+  display:grid; grid-template-columns:1fr; gap:20px; margin-top:8px;
+  max-width:560px; margin-left:auto; margin-right:auto;
 }
-.result-item:first-child { border-top:none; }
-.result-item h3 {
-  font-family:'Barlow Condensed',sans-serif; font-weight:800;
-  text-transform:uppercase; letter-spacing:0.5px;
-  font-size:22px; color:#1e3a3e;
+.result-card {
+  background:#fff; border:2px solid rgba(201,169,110,0.4); border-radius:16px;
+  padding:32px 28px; text-align:center;
+  display:flex; flex-direction:column; align-items:center;
 }
-.result-item .tag {
-  font-size:10px; letter-spacing:2px; text-transform:uppercase;
-  color:#8a6d43; font-weight:600; align-self:start; padding-top:6px;
-}
-.result-item p {
-  grid-column:1 / -1;
-  font-size:15px; line-height:1.8; color:rgba(30,58,62,0.65); text-align:left;
-}
+.result-card .tag { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#8a6d43; font-weight:600; margin-bottom:12px; }
+.result-card h3 { font-family:'Barlow Condensed',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; font-size:21px; color:#1e3a3e; margin-bottom:14px; }
+.result-card p { font-size:15px; line-height:1.75; color:rgba(30,58,62,0.65); text-align:center; }
 .results-disclaimer {
-  margin-top:24px; padding-top:24px; border-top:1px solid rgba(30,58,62,0.12);
+  margin-top:28px; padding-top:24px; border-top:1px solid rgba(30,58,62,0.12);
   font-size:13px; line-height:1.7; font-style:italic; color:rgba(30,58,62,0.5);
   text-align:left;
 }
-@media(max-width:480px) {
-  .result-item { grid-template-columns:1fr; }
-  .result-item .tag { padding-top:0; }
+@media(min-width:769px) {
+  .result-card { padding:36px 30px; }
 }
 </style>
 <script src="/assets/barra-progreso.js" defer></script>
@@ -921,10 +913,12 @@ button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-rad
   <div class="section-eyebrow reveal">Track Record</div>
   <h2 class="reveal reveal-d1">Notable Results</h2>
   <div class="results">
-    <div class="result-item reveal reveal-d2">
-      <h3>Trust Contest Settlement</h3>
-      <span class="tag">Trust &amp; Probate Litigation</span>
-      <p>Defended a successor trustee and her brother against a trust contest brought by the settlor's grandchildren alleging lack of capacity, undue influence, and financial elder abuse, resolving the dispute through a mediated settlement.</p>
+    <div class="results-grid">
+      <div class="result-card reveal reveal-d2">
+        <span class="tag">Trust &amp; Probate Litigation</span>
+        <h3>Trust Contest Settlement</h3>
+        <p>Defended a successor trustee and her brother against a trust contest brought by the settlor's grandchildren alleging lack of capacity, undue influence, and financial elder abuse, resolving the dispute through a mediated settlement.</p>
+      </div>
     </div>
     <p class="results-disclaimer">These results are provided for informational purposes only. Prior results do not guarantee a similar outcome, and every matter turns on its own facts and law. Representative matters include results obtained in Mr. McLellan's prior practice.</p>
   </div>
