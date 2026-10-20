@@ -1,437 +1,3 @@
-<style>
-
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1');
-html, body { overflow-x:hidden; }
-.mlgE-conservatorship-disputes { font-family:'Barlow',sans-serif !important; color:#1e3a3e !important;
-  -webkit-font-smoothing:antialiased; font-weight:500; }
-
-
-.mlgE-conservatorship-disputes *, .mlgE-conservatorship-disputes *::before, .mlgE-conservatorship-disputes *::after { margin:0 !important; padding:0 !important; box-sizing:border-box; text-wrap:pretty; }
-.mlgE-conservatorship-disputes { scroll-behavior:smooth; }
-.mlgE-conservatorship-disputes { font-family:'Barlow',sans-serif !important; background:#fff !important; color:#1e3a3e !important; -webkit-font-smoothing:antialiased; font-weight:500 !important; }
-.mlgE-conservatorship-disputes .logo-img-mobile { height:28px !important; width:auto !important; }
-.mlgE-conservatorship-disputes .dropdown-toggle::after { content:' ▾'; font-size:9px !important; opacity:0.5; }
-.mlgE-conservatorship-disputes .dropdown-menu { display:none !important; position:absolute !important; top:calc(100% + 12px); left:50%; transform:translateX(-50%); background:#fff !important; border:1px solid #e0ddd6 !important; border-radius:10px !important; min-width:230px !important; padding:8px 0 !important; box-shadow:0 8px 32px rgba(0,0,0,0.1); list-style:none !important; }
-.mlgE-conservatorship-disputes .dropdown-menu li a { display:block !important; padding:10px 20px !important; color:#333 !important; text-decoration:none !important; font-size:13px !important; font-weight:400 !important; transition:background 0.15s,color 0.15s; border-radius:6px !important; margin:2px 6px !important; }
-.mlgE-conservatorship-disputes .dropdown-menu li a:hover { background:#f0f5f5 !important; color:#1e3a3e !important; }
-.mlgE-conservatorship-disputes .dropdown-menu li a.featured { font-weight:600 !important; color:#1e3a3e !important; }
-.mlgE-conservatorship-disputes .dropdown-divider { height:1px !important; background:#f0ede6 !important; margin:5px 0 !important; }
-.mlgE-conservatorship-disputes .mobile-accordion-btn { display:flex !important; justify-content:space-between; align-items:center; width:100% !important; background:none !important; border:none !important; padding:15px 0 !important; color:rgba(255,255,255,0.85) !important; font-size:17px !important; font-weight:500 !important; cursor:pointer; text-align:left !important; }
-.mlgE-conservatorship-disputes .mobile-accordion-arrow { transition:transform 0.2s; font-size:18px !important; color:#c9a96e !important; }
-.mlgE-conservatorship-disputes .mobile-accordion-menu { display:none !important; list-style:none !important; padding-left:16px !important; }
-.mlgE-conservatorship-disputes .mobile-accordion-menu li { border-bottom:1px solid rgba(255,255,255,0.07) !important; }
-.mlgE-conservatorship-disputes .mobile-accordion-menu li a { padding:11px 0 !important; font-size:14px !important; font-weight:400 !important; }
-@media(max-width:768px) {
-}
-@media(min-width:769px) {
-}
-.mlgE-conservatorship-disputes .emp-hero {
-  position:relative !important; overflow:hidden;
-  min-height:calc(100svh - 53px) !important; display:flex !important; flex-direction:column;
-  justify-content:center; align-items:center; text-align:center !important; padding:0 28px 10px !important;
-  background:#1e3a3e !important;
-  border-bottom:12px solid #c9a96e !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .emp-hero { min-height:calc(100svh - 62px) !important; padding:0 80px 12px !important; }
-}
-.mlgE-conservatorship-disputes .emp-hero-img {
-  position:absolute !important; inset:0; width:100% !important; height:100% !important;
-  object-fit:cover; object-position:center 30%;
-  filter:brightness(0.7) saturate(1.1);
-}
-.mlgE-conservatorship-disputes .emp-hero-overlay {
-  position:absolute !important; inset:0;
-  background:linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(20,45,50,0.55) 40%, rgba(20,45,50,0.95) 100%) !important;
-}
-.mlgE-conservatorship-disputes .emp-hero-overlay::before { content:''; position:absolute !important; inset:0; background:rgba(20,48,52,0.55) !important; }
-.mlgE-conservatorship-disputes .emp-hero h1 {
-  position:relative !important; z-index:2;
-  font-family:'Barlow Condensed',sans-serif !important;
-  font-size:clamp(26px, 7.2vw, 68px) !important; font-weight:900 !important; line-height:0.98 !important; overflow-wrap:break-word;
-  color:#fff !important; text-transform:uppercase !important; letter-spacing:-1px !important;
-  margin:0 auto 18px !important; max-width:1000px !important;
-}
-.mlgE-conservatorship-disputes .emp-hero h1 em {
-  display:block !important; font-style:italic !important;
-  font-family:'DM Serif Display',serif !important; font-weight:400 !important;
-  text-transform:none !important; color:#c9a96e !important; font-size:0.75em !important; letter-spacing:0 !important;
-}
-.mlgE-conservatorship-disputes .emp-hero-sub {
-  position:relative !important; z-index:2;
-  font-size:19px !important; color:rgba(255,255,255,0.8) !important; max-width:540px !important;
-  line-height:1.7 !important; margin:0 auto 28px !important;
-  font-family:'DM Serif Display',serif !important; font-style:italic !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .emp-hero-sub { font-size:25px !important; max-width:760px !important; }
-}
-.mlgE-conservatorship-disputes .btn-gold {
-  display:inline-flex !important; align-items:center; gap:8px !important;
-  background:linear-gradient(90deg,#c9a96e 0%,#e8cc8a 40%,#c9a96e 60%,#b8933a 100%) !important;
-  background-size:200% auto !important;
-  color:#1e3a3e !important; font-weight:700 !important; font-size:14px !important;
-  padding:13px 28px !important; border-radius:28px !important; text-decoration:none !important;
-  position:relative !important; z-index:2; width:max-content !important; max-width:100% !important;
-}
-.mlgE-conservatorship-disputes .hero-pill {
-  position:relative !important; z-index:2;
-  display:inline-flex !important; align-items:center; gap:10px !important; width:max-content !important; max-width:100% !important;
-  box-sizing:border-box; white-space:normal;
-  background:rgba(201,169,110,0.15) !important; border:1.5px solid rgba(201,169,110,0.6) !important;
-  border-radius:26px !important; padding:9px 16px !important; margin-bottom:24px !important;
-  font-size:15px !important; letter-spacing:2.5px !important; text-transform:uppercase !important;
-  font-weight:700 !important; color:#e8cc8a !important;
-}
-@media(max-width:400px) {
-.mlgE-conservatorship-disputes .hero-pill { font-size:10px !important; letter-spacing:1px !important; padding:8px 14px !important; }
-}
-.mlgE-conservatorship-disputes .hero-pill::before { content:''; width:7px !important; height:7px !important; background:#c9a96e !important; border-radius:50% !important; flex-shrink:0; }
-.mlgE-conservatorship-disputes .section-eyebrow {
-  display:flex !important; width:max-content !important; max-width:100% !important; margin:0 auto 20px !important;
-  align-items:center; gap:10px !important; text-align:center !important;
-  font-size:15px !important; letter-spacing:3px !important; text-transform:uppercase !important;
-  color:#1e3a3e !important; font-weight:700 !important;
-}
-.mlgE-conservatorship-disputes .section-eyebrow::before { content:''; width:24px !important; height:1px !important; background:#1e3a3e !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .section-eyebrow { font-size:18px !important; letter-spacing:4px !important; }
-}
-.mlgE-conservatorship-disputes .content-section { background:#1e3a3e !important; padding:64px 28px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-section { padding:88px 80px !important; }
-}
-.mlgE-conservatorship-disputes .content-inner { max-width:none !important; margin:0 auto !important; }
-.mlgE-conservatorship-disputes .content-section .section-eyebrow { color:#c9a96e !important; }
-.mlgE-conservatorship-disputes .content-section .section-eyebrow::before { background:#c9a96e !important; }
-.mlgE-conservatorship-disputes .content-section h2 {
-  font-family:'Barlow Condensed',sans-serif !important; text-align:center !important;
-  font-size:clamp(30px, 5vw, 48px) !important; font-weight:900 !important; line-height:1.05 !important;
-  color:#fff !important; text-transform:uppercase !important; letter-spacing:-1px !important; margin-bottom:32px !important;
-}
-.mlgE-conservatorship-disputes .content-cards { display:flex !important; flex-direction:column; gap:24px !important; }
-.mlgE-conservatorship-disputes .content-card {
-  background:#fbf6ef !important; border-radius:20px !important;
-  padding:32px 28px !important; box-shadow:0 10px 32px rgba(0,0,0,0.2);
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-card { padding:48px 56px !important; }
-}
-.mlgE-conservatorship-disputes .content-section p { font-size:18px !important; line-height:1.85 !important; color:#4a5c5e !important; margin-bottom:16px !important; text-align:justify !important; }
-.mlgE-conservatorship-disputes .content-section p:last-child { margin-bottom:0 !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-section p { font-size:21px !important; }
-}
-.mlgE-conservatorship-disputes .content-section p.content-lead { font-weight:800 !important; color:#1e3a3e !important; text-align:left !important; }
-.mlgE-conservatorship-disputes .content-list { list-style:none !important; margin-top:16px !important; display:grid !important; gap:14px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-list { grid-template-columns:1fr 1fr; gap:18px !important; }
-}
-.mlgE-conservatorship-disputes .content-list li {
-  padding:20px 22px !important; display:flex !important; align-items:flex-start; gap:12px !important;
-  background:#fff !important; border:2.5px solid rgba(201,169,110,0.55) !important; border-radius:14px !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-list li { padding:26px 28px !important; }
-}
-.mlgE-conservatorship-disputes .content-list li::before { content:"\2713"; color:#c9a96e !important; font-weight:900 !important; flex-shrink:0; margin-top:2px !important; font-size:19px !important; }
-.mlgE-conservatorship-disputes .content-list li span { font-size:18px !important; line-height:1.7 !important; color:#4a5c5e !important; text-align:left !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .content-list li span { font-size:21px !important; }
-}
-.mlgE-conservatorship-disputes .help-section { background:#fbf6ef !important; padding:64px 28px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .help-section { padding:88px 80px !important; }
-}
-.mlgE-conservatorship-disputes .help-section .section-eyebrow { color:#1e3a3e !important; }
-.mlgE-conservatorship-disputes .help-section .section-eyebrow::before { background:#1e3a3e !important; }
-.mlgE-conservatorship-disputes .help-inner { max-width:none !important; margin:0 auto !important; }
-.mlgE-conservatorship-disputes .help-section h2 {
-  font-family:'Barlow Condensed',sans-serif !important; text-align:center !important;
-  font-size:clamp(30px, 5vw, 48px) !important; font-weight:900 !important; line-height:1.05 !important;
-  color:#1e3a3e !important; text-transform:uppercase !important; letter-spacing:-1px !important; margin-bottom:32px !important;
-}
-.mlgE-conservatorship-disputes .help-columns { display:flex !important; flex-direction:column; gap:14px !important; }
-@media(min-width:600px) {
-.mlgE-conservatorship-disputes .help-columns { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px !important; }
-}
-.mlgE-conservatorship-disputes .help-item {
-  background:#1e3a3e !important; border-radius:16px !important; padding:22px 24px !important;
-  box-shadow:0 8px 24px rgba(0,0,0,0.15);
-  border:2.5px solid rgba(201,169,110,0.45) !important;
-  display:flex !important; align-items:flex-start; gap:14px !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .help-item { padding:28px 30px !important; }
-}
-.mlgE-conservatorship-disputes .help-item::before { content:"\2713"; color:#c9a96e !important; font-weight:900 !important; font-size:18px !important; flex-shrink:0; margin-top:1px !important; }
-.mlgE-conservatorship-disputes .help-item span { font-size:16px !important; color:rgba(255,255,255,0.85) !important; line-height:1.6 !important; text-align:justify !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .help-item span { font-size:18px !important; }
-}
-.mlgE-conservatorship-disputes .faq-section { background:#1e3a3e !important; padding:64px 28px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .faq-section { padding:88px 80px !important; }
-}
-.mlgE-conservatorship-disputes .faq-section h2 {
-  font-family:'Barlow Condensed',sans-serif !important; text-align:center !important;
-  font-size:clamp(30px, 5vw, 48px) !important; font-weight:900 !important; line-height:1.05 !important;
-  color:#fff !important; text-transform:uppercase !important; letter-spacing:-1px !important; margin-bottom:32px !important;
-}
-.mlgE-conservatorship-disputes .faq-columns { display:flex !important; flex-direction:column; gap:14px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .faq-columns { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:24px; align-items:start; }
-}
-.mlgE-conservatorship-disputes .faq-col { display:flex !important; flex-direction:column; gap:14px !important; }
-.mlgE-conservatorship-disputes .faq-item {
-  background:#fbf6ef !important; border-radius:16px !important; padding:4px 24px !important;
-  box-shadow:0 8px 24px rgba(0,0,0,0.18);
-}
-.mlgE-conservatorship-disputes .faq-question {
-  width:100% !important; background:none !important; border:none !important; text-align:left !important;
-  padding:20px 0 !important; font-family:'Barlow',sans-serif !important; font-size:16px !important;
-  font-weight:600 !important; color:#1e3a3e !important; cursor:pointer;
-  display:flex !important; justify-content:space-between; align-items:center; gap:12px !important;
-  transition:opacity 0.15s;
-}
-.mlgE-conservatorship-disputes .faq-question:hover { opacity:0.7; }
-.mlgE-conservatorship-disputes .faq-question .faq-icon { font-size:20px !important; color:#c9a96e !important; flex-shrink:0; transition:transform 0.3s; }
-.mlgE-conservatorship-disputes .faq-answer { max-height:0 !important; overflow:hidden; transition:max-height 0.35s ease; }
-.mlgE-conservatorship-disputes .faq-answer p { font-size:15px !important; line-height:1.75 !important; color:#5a6e70 !important; padding-bottom:20px !important; margin:0 !important; text-align:justify !important; }
-.mlgE-conservatorship-disputes .faq-item.open .faq-icon { transform:rotate(45deg); }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .faq-question { font-size:18px !important; }
-.mlgE-conservatorship-disputes .faq-answer p { font-size:16px !important; }
-}
-.mlgE-conservatorship-disputes .why-us { background:#1e3a3e !important; padding:72px 28px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us { padding:96px 80px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-inner { max-width:none !important; margin:0 auto !important; }
-.mlgE-conservatorship-disputes .why-us-eyebrow { font-size:15px !important; font-weight:700 !important; letter-spacing:3px !important; text-transform:uppercase !important; color:#c9a96e !important; margin-bottom:16px !important; display:flex !important; width:max-content !important; margin-left:auto !important; margin-right:auto !important; text-align:center !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-eyebrow { font-size:18px !important; letter-spacing:4px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-title { font-family:'Barlow Condensed',sans-serif !important; text-align:center !important; font-size:clamp(36px,5vw,56px) !important; font-weight:800 !important; color:#fff !important; line-height:1.05 !important; letter-spacing:-1px !important; text-transform:uppercase !important; margin-bottom:48px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-title { font-size:clamp(48px,5.5vw,72px) !important; margin-bottom:56px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-title em { display:block !important; font-style:italic !important; font-family:'DM Serif Display',serif !important; font-weight:400 !important; text-transform:none !important; color:#c9a96e !important; letter-spacing:-0.5px !important; }
-.mlgE-conservatorship-disputes .why-us-grid { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:2px !important; background:rgba(255,255,255,0.25) !important; border:2px solid rgba(255,255,255,0.25) !important; border-radius:16px !important; overflow:hidden; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-grid { gap:8px !important; }
-}
-@media(max-width:600px) {
-.mlgE-conservatorship-disputes .why-us-grid { grid-template-columns:1fr; }
-}
-.mlgE-conservatorship-disputes .why-us-item { background:#fbf6ef !important; padding:32px 28px !important; display:flex !important; flex-direction:column; gap:10px !important; transition:background 0.2s; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-item { padding:56px 48px !important; gap:14px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-item:hover { background:#f3ece0 !important; }
-.mlgE-conservatorship-disputes .why-us-num { font-family:'Barlow Condensed',sans-serif !important; font-size:13px !important; font-weight:700 !important; letter-spacing:2px !important; color:#c9a96e !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-num { font-size:16px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-item strong { font-size:17px !important; font-weight:700 !important; color:#1e3a3e !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-item strong { font-size:26px !important; }
-}
-.mlgE-conservatorship-disputes .why-us-item span { font-size:14px !important; color:#5a6e70 !important; line-height:1.65 !important; text-align:justify !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .why-us-item span { font-size:18px !important; line-height:1.7 !important; }
-}
-.mlgE-conservatorship-disputes .cta-banner { background:#fbf6ef !important; padding:72px 28px !important; text-align:center !important; border-top:1px solid #e8e3da !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .cta-banner { padding:100px 28px !important; }
-}
-.mlgE-conservatorship-disputes .cta-banner h2 {
-  font-family:'Barlow Condensed',sans-serif !important;
-  font-size:clamp(32px, 5vw, 52px) !important; font-weight:900 !important;
-  color:#1e3a3e !important; text-transform:uppercase !important; letter-spacing:-1px !important; margin-bottom:12px !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .cta-banner h2 { font-size:clamp(48px, 6vw, 80px) !important; }
-}
-.mlgE-conservatorship-disputes .cta-banner h2 em {
-  font-style:italic !important; font-family:'DM Serif Display',serif !important;
-  font-weight:400 !important; text-transform:none !important; color:#c9a96e !important; display:block !important;
-}
-.mlgE-conservatorship-disputes .cta-banner p { font-size:16px !important; color:#5a6e70 !important; margin-bottom:28px !important; line-height:1.65 !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .cta-banner p { font-size:22px !important; }
-}
-.mlgE-conservatorship-disputes .cta-banner .btn-gold { font-size:15px !important; padding:15px 36px !important; margin:0 auto !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .cta-banner .btn-gold { font-size:18px !important; padding:18px 44px !important; }
-}
-@keyframes navBtnShimmer { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
-@keyframes navBtnPulse { 0% { box-shadow:0 0 0 0 rgba(201,169,110,0.6); } 70% { box-shadow:0 0 0 10px rgba(201,169,110,0); } 100% { box-shadow:0 0 0 0 rgba(201,169,110,0); } }
-.mlgE-conservatorship-disputes .btn-gold, .mlgE-conservatorship-disputes .contact-btn {
-  background:linear-gradient(90deg,#c9a96e 0%,#e8cc8a 40%,#c9a96e 60%,#b8933a 100%) !important;
-  background-size:200% auto !important;
-  color:#1e3a3e !important;
-  animation:navBtnShimmer 2s linear infinite, navBtnPulse 2.5s ease-out infinite;
-}
-.mlgE-conservatorship-disputes .video-mobile { display:none !important; }
-@media(max-width:768px) {
-.mlgE-conservatorship-disputes .video-desktop { display:none !important; }
-.mlgE-conservatorship-disputes .video-mobile { display:block !important; }
-}
-.mlgE-conservatorship-disputes .maps-section { width:100% !important; line-height:0 !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .maps-section iframe { height:400px !important; }
-}
-.mlgE-conservatorship-disputes .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
-.mlgE-conservatorship-disputes .reveal.in-view { opacity:1; transform:translateY(0); }
-.mlgE-conservatorship-disputes .reveal-d1 { transition-delay:0.08s; }
-.mlgE-conservatorship-disputes .reveal-d2 { transition-delay:0.16s; }
-.mlgE-conservatorship-disputes .reveal-d3 { transition-delay:0.24s; }
-.mlgE-conservatorship-disputes .reveal-d4 { transition-delay:0.32s; }
-.mlgE-conservatorship-disputes .emp-testimonials {
-  background:#fbf6ef !important; padding:64px 28px !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .emp-testimonials { padding:80px 80px !important; }
-}
-.mlgE-conservatorship-disputes .emp-testimonials .section-eyebrow { color:#c9a96e !important; }
-.mlgE-conservatorship-disputes .emp-testimonials h2 {
-  font-family:'DM Serif Display',serif !important;
-  font-size:clamp(28px, 4vw, 42px) !important; font-weight:400 !important; font-style:italic !important;
-  color:#1e3a3e !important; margin-bottom:36px !important;
-}
-.mlgE-conservatorship-disputes .emp-carousel { overflow:hidden; }
-.mlgE-conservatorship-disputes .emp-carousel-track { display:flex !important; transition:transform 0.45s cubic-bezier(0.4,0,0.2,1); }
-.mlgE-conservatorship-disputes .emp-test-card {
-  min-width:100% !important; box-sizing:border-box;
-  background:#1e3a3e !important; border:1px solid rgba(30,58,62,0.2) !important;
-  border-radius:12px !important; padding:32px !important;
-}
-.mlgE-conservatorship-disputes .emp-test-card .stars { color:#c9a96e !important; font-size:14px !important; margin-bottom:16px !important; letter-spacing:2px !important; }
-.mlgE-conservatorship-disputes .emp-test-card .quote {
-  font-size:15px !important; line-height:1.8 !important; color:rgba(255,255,255,0.85) !important;
-  font-style:italic !important; font-family:'DM Serif Display',serif !important;
-  margin-bottom:20px !important; display:block !important;
-}
-.mlgE-conservatorship-disputes .emp-test-card .author { font-size:12px !important; font-weight:700 !important; color:#c9a96e !important; letter-spacing:1px !important; text-transform:uppercase !important; }
-.mlgE-conservatorship-disputes .emp-carousel-dots { display:flex !important; gap:8px !important; margin-top:24px !important; }
-.mlgE-conservatorship-disputes .employers-section h2, .mlgE-conservatorship-disputes .employees-section h2, .mlgE-conservatorship-disputes .emp-testimonials h2, .mlgE-conservatorship-disputes .employer-faq h3, .mlgE-conservatorship-disputes .employee-faq h2, .mlgE-conservatorship-disputes .why-us-title { text-align:center !important; }
-.mlgE-conservatorship-disputes .detail-block p, .mlgE-conservatorship-disputes .employers-section > p, .mlgE-conservatorship-disputes .employers-intro-text p, .mlgE-conservatorship-disputes .employees-intro-text p, .mlgE-conservatorship-disputes .employees-section > p, .mlgE-conservatorship-disputes .faq-answer p, .mlgE-conservatorship-disputes .emp-test-card .quote, .mlgE-conservatorship-disputes .why-us-item span, .mlgE-conservatorship-disputes .paga-alert p, .mlgE-conservatorship-disputes .employer-item-text span, .mlgE-conservatorship-disputes .about p, .mlgE-conservatorship-disputes .mlg-quote, .mlgE-conservatorship-disputes .quote, .mlgE-conservatorship-disputes .lawsuits p, .mlgE-conservatorship-disputes .detail-section p, .mlgE-conservatorship-disputes .bio-block p, .mlgE-conservatorship-disputes .result-card span, .mlgE-conservatorship-disputes .atty-hero p {
-  text-align:left !important;
-}
-.mlgE-conservatorship-disputes .faq-h { margin:0 !important; padding:0 !important; font-size:inherit !important; font-weight:inherit !important; line-height:inherit !important; }
-.mlgE-conservatorship-disputes .faq-question:focus-visible, .mlgE-conservatorship-disputes a:focus-visible, .mlgE-conservatorship-disputes button:focus-visible { outline:3px solid #c9a96e; outline-offset:3px; border-radius:4px !important; }
-.mlgE-conservatorship-disputes .mlg-salto {
-  position:absolute !important; left:-9999px; top:0; z-index:100000;
-  background:#1e3a3e !important; color:#fff !important; padding:12px 20px !important; border-radius:0 0 8px 0 !important;
-  font-family:'Barlow',sans-serif !important; font-size:15px !important; font-weight:700 !important; text-decoration:none !important;
-}
-.mlgE-conservatorship-disputes .mlg-salto:focus { left:0; }
-.mlgE-conservatorship-disputes .mlg-tabla-caja {
-  overflow-x:auto; margin:26px 0 0 !important;
-  border:2.5px solid rgba(201,169,110,0.55) !important; border-radius:14px !important; background:#fff !important;
-}
-.mlgE-conservatorship-disputes .mlg-tabla { width:100% !important; border-collapse:collapse; min-width:520px !important; }
-.mlgE-conservatorship-disputes .mlg-tabla caption {
-  text-align:left !important; padding:18px 20px 0 !important;
-  font-size:15px !important; color:#6b7c7e !important; font-weight:600 !important;
-}
-.mlgE-conservatorship-disputes .mlg-tabla th, .mlgE-conservatorship-disputes .mlg-tabla td {
-  padding:14px 18px !important; text-align:left !important; vertical-align:top;
-  font-size:16px !important; line-height:1.55 !important; color:#4a5c5e !important;
-  border-bottom:1px solid rgba(30,58,62,0.12) !important;
-}
-.mlgE-conservatorship-disputes .mlg-tabla th {
-  background:#1e3a3e !important; color:#fff !important; font-weight:700 !important;
-  font-size:15px !important; letter-spacing:0.4px !important;
-}
-.mlgE-conservatorship-disputes .mlg-tabla tbody tr:last-child td { border-bottom:none !important; }
-.mlgE-conservatorship-disputes .mlg-tabla tbody tr:nth-child(even) td { background:#fbf6ef !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .mlg-tabla th, .mlgE-conservatorship-disputes .mlg-tabla td { font-size:18px !important; padding:16px 22px !important; }
-}
-.mlgE-conservatorship-disputes .mlg-autoridad {
-  margin:24px 0 0 !important; padding:22px 24px !important;
-  background:#fbf6ef !important; border-left:6px solid #c9a96e !important; border-radius:0 12px 12px 0 !important;
-}
-.mlgE-conservatorship-disputes .mlg-autoridad blockquote {
-  margin:0 0 12px !important; font-family:'DM Serif Display',serif !important;
-  font-style:italic !important; font-size:19px !important; line-height:1.6 !important; color:#1e3a3e !important;
-}
-.mlgE-conservatorship-disputes .mlg-autoridad cite {
-  display:block !important; font-style:normal !important; font-size:15px !important; font-weight:700 !important; color:#6b7c7e !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .mlg-autoridad blockquote { font-size:21px !important; }
-.mlgE-conservatorship-disputes .mlg-autoridad cite { font-size:16px !important; }
-}
-.mlgE-conservatorship-disputes .faq-answer .mlg-tabla-caja, .mlgE-conservatorship-disputes .faq-answer .mlg-autoridad { margin-bottom:20px !important; }
-.mlgE-conservatorship-disputes .mlg-tabla caption { padding-bottom:14px !important; }
-.mlgE-conservatorship-disputes .mlg-tabla--2col { min-width:0 !important; }
-.mlgE-conservatorship-disputes .mlg-tabla-nota { display:none !important; }
-@media(max-width:768px) {
-.mlgE-conservatorship-disputes .mlg-tabla-nota {
-    display:block !important; margin:14px 0 0 !important; font-size:15px !important; font-weight:600 !important; color:#6b7c7e !important;
-  }
-}
-.mlgE-conservatorship-disputes .notable-results { background:#fbf6ef !important; padding:64px 28px !important; }
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .notable-results { padding:80px 80px !important; }
-}
-.mlgE-conservatorship-disputes .notable-results .section-eyebrow { color:#c9a96e !important; }
-.mlgE-conservatorship-disputes .notable-results h2 {
-  font-family:'DM Serif Display',serif !important;
-  font-size:clamp(28px, 4vw, 42px) !important; font-weight:400 !important; font-style:italic !important;
-  color:#1e3a3e !important; margin-bottom:36px !important;
-}
-.mlgE-conservatorship-disputes .results { max-width:none !important; }
-.mlgE-conservatorship-disputes .results-grid {
-  display:grid !important; grid-template-columns:1fr !important; gap:20px !important; margin-top:8px !important;
-  max-width:560px !important; margin-left:auto !important; margin-right:auto !important;
-}
-.mlgE-conservatorship-disputes .result-card {
-  background:#fff !important; border:2px solid rgba(201,169,110,0.4) !important; border-radius:16px !important;
-  padding:32px 28px !important; text-align:center !important;
-  display:flex !important; flex-direction:column !important; align-items:center !important;
-}
-.mlgE-conservatorship-disputes .result-card .tag { font-size:10px !important; letter-spacing:2px !important; text-transform:uppercase !important; color:#8a6d43 !important; font-weight:600 !important; margin-bottom:12px !important; }
-.mlgE-conservatorship-disputes .result-card h3 { font-family:'Barlow Condensed',sans-serif !important; font-weight:800 !important; text-transform:uppercase !important; letter-spacing:0.5px !important; font-size:21px !important; color:#1e3a3e !important; margin-bottom:14px !important; }
-.mlgE-conservatorship-disputes .result-card p { font-size:15px !important; line-height:1.75 !important; color:rgba(30,58,62,0.65) !important; text-align:center !important; }
-.mlgE-conservatorship-disputes .results-disclaimer {
-  margin-top:28px !important; padding-top:24px !important; border-top:1px solid rgba(30,58,62,0.12) !important;
-  font-size:13px !important; line-height:1.7 !important; font-style:italic !important; color:rgba(30,58,62,0.5) !important;
-  text-align:left !important;
-}
-@media(min-width:769px) {
-.mlgE-conservatorship-disputes .result-card { padding:36px 30px !important; }
-}
-
-/* Misma receta que el widget del Appellate Digest, que en Duda funciona bien:
-   secciones a 100vw exacto; el hero desborda 2vw por lado solo en desktop y
-   tapa con sombras arriba y abajo; en mobile vuelve a 100vw para no empujar
-   los botones fuera de pantalla. */
-.mlgE-conservatorship-disputes > section, .mlgE-conservatorship-disputes > div {
-  margin-left:calc(-50vw + 50%) !important;
-  width:100vw !important; max-width:100vw !important;
-}
-/* Sin box-shadow: esa franja verde de 60px por encima del primer elemento
-   se leia como un segundo hero en cualquier pagina que llevara el wrapper. */
-.mlgE-conservatorship-disputes > *:first-child {
-  margin-top:-8px !important;
-  margin-left:calc(-52vw + 50%) !important;
-  width:104vw !important; max-width:104vw !important;
-}
-@media(max-width:768px) {
-  .mlgE-conservatorship-disputes > *:first-child {
-    margin-left:calc(-50vw + 50%) !important;
-    width:100vw !important; max-width:100vw !important;
-  }
-}
-
-</style>
 <div class="mlgE-conservatorship-disputes">
 <a class="mlg-salto" href="#contenido">Skip to content</a>
 
@@ -447,4 +13,515 @@ html, body { overflow-x:hidden; }
   <p class="emp-hero-sub">Medical care, living arrangements & asset protection throughout Silicon Valley & the Bay Area.</p>
   <a href="#contact" class="btn-gold">Request a Free Consultation →</a>
 </section>
+
+<!-- CONTENT -->
+<section class="content-section" id="contenido">
+  <div class="content-inner">
+    <div class="section-eyebrow reveal">What Is a Conservatorship Dispute?</div>
+    <h2 class="reveal reveal-d1">Understanding Conservatorship Disputes in California</h2>
+    <div class="content-cards">
+      <div class="reveal reveal-d2" style="display:grid !important; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:24px !important; align-items:stretch;">
+        <div class="content-card" style="margin:0 !important;">
+          <p class="content-lead">A conservatorship gives one person legal authority to make decisions for another adult who can no longer manage their own affairs.</p>
+          <p>Whether due to age, illness, or disability, many conservatorships are established without controversy, but families often disagree about who is best suited to serve, whether a conservatorship is even necessary, or whether an existing conservator is acting in the protected person's best interests.</p>
+          <p class="mlg-vecinas">Families in a conservatorship fight are frequently dealing with related matters at the same time, such as beneficiary rights under an existing trust or contested probate matters after a death.</p>
+        </div>
+        <div style="position:relative !important; width:100% !important; min-height:280px !important; border-radius:16px !important; overflow:hidden; box-shadow:0 12px 40px rgba(0,0,0,0.3);">
+          <img src="https://irp.cdn-website.com/9df80dfc/dms3rep/multi/WhatsApp+Image+2025-01-21+at+14.57.36_dd4935a6.jpg" alt="McLellan Law Group attorneys" style="display:block !important; width:100% !important; height:100% !important; object-fit:cover; object-position:center 20%; filter:brightness(0.88) saturate(1.05);">
+          <div style="position:absolute !important; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(20,45,50,0.2) 40%, rgba(20,45,50,0.42) 100%) !important;"></div>
+        </div>
+      </div>
+      <div class="content-card reveal reveal-d3">
+        <p><strong>If you are trying to establish a conservatorship,</strong> the process starts with a petition explaining why the proposed conservatee can no longer safely manage their own care or finances, and why the authority you are requesting is no broader than necessary. Courts require clear and convincing evidence that the statutory grounds are met, so documenting the specific incidents and needs behind the petition matters from the outset.</p>
+        <p><strong>If your family is trying to prevent or oppose a conservatorship,</strong> you can file a formal objection, propose a less restrictive alternative, or contest who has petitioned to serve. Courts take these objections seriously, particularly where a workable alternative to a full conservatorship already exists.</p>
+        <p><strong>If you are the proposed conservatee objecting to the petition yourself,</strong> you generally have the right to be present at the hearing, to be represented by an attorney, and to contest both whether a conservatorship is warranted at all and who should serve if one is granted.</p>
+      </div>
+      <div class="content-card reveal reveal-d4">
+        <p class="content-lead">California recognizes different types of conservatorships depending on the circumstances.</p>
+        <p>A general or limited probate conservatorship applies to an adult who cannot manage personal care or finances. An LPS conservatorship under the Lanterman-Petris-Short Act is a separate form of conservatorship for a person who meets California's statutory definition of "gravely disabled" because of a qualifying behavioral health condition, and LPS proceedings follow different procedures, standards, and protections from probate conservatorships. Each involves its own petition process, standard of proof, and ongoing court oversight, and disputes can arise at any stage, from the initial appointment to allegations of later abuse.</p>
+      </div>
+      <div class="content-card reveal reveal-d5">
+        <p class="content-lead">The stakes in these cases go beyond finances.</p>
+        <p>A conservatorship touches where a person lives, who makes their medical decisions, and how their assets are protected. When a conservator abuses that authority, isolates the conservatee from family, or mismanages their estate, prompt court intervention can be necessary to protect a vulnerable person who may not be able to advocate for themselves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE HELP -->
+<section class="help-section">
+  <div class="help-inner">
+    <div class="section-eyebrow reveal">How We Help</div>
+    <h2 class="reveal reveal-d1">What Our Conservatorship Attorneys Do</h2>
+    <div class="help-columns">
+      <div class="help-item reveal reveal-d1"><span>Petition the probate court to establish a conservatorship of the person, estate, or both.</span></div>
+      <div class="help-item reveal reveal-d2"><span>Represent family members competing to serve as conservator, advocating for the arrangement that best protects your loved one.</span></div>
+      <div class="help-item reveal reveal-d3"><span>Investigate and litigate allegations of conservatorship abuse, neglect, or financial mismanagement.</span></div>
+      <div class="help-item reveal reveal-d4"><span>Petition to remove and replace a conservator who is failing in their duties or acting against the conservatee's interests.</span></div>
+      <div class="help-item reveal reveal-d5"><span>Object to unnecessary or overly broad conservatorship petitions on behalf of the proposed conservatee.</span></div>
+      <div class="help-item reveal reveal-d6"><span>Guide families through LPS conservatorship proceedings involving a loved one's mental health treatment.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <h2 class="reveal">Conservatorship FAQs</h2>
+
+    <div class="faq-columns">
+      <div class="faq-col">
+        <div class="faq-item reveal reveal-d1">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-is-the-difference-between-a-conservatorship-h" aria-expanded="false" aria-controls="faq-what-is-the-difference-between-a-conservatorship" onclick="toggleFaq(this)">
+              What is the difference between a conservatorship of the person and of the estate?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-is-the-difference-between-a-conservatorship" role="region" aria-labelledby="faq-what-is-the-difference-between-a-conservatorship-h">
+            <p>A conservatorship of the person gives the conservator authority over an individual's daily care, including housing, meals, and medical decisions. A conservatorship of the estate gives the conservator authority over the person's finances and assets. Courts can grant either type alone or both together, depending on the conservatee's needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d2">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-is-the-difference-between-a-probate-h" aria-expanded="false" aria-controls="faq-what-is-the-difference-between-a-probate" onclick="toggleFaq(this)">
+              What is the difference between a probate conservatorship and an LPS conservatorship?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-is-the-difference-between-a-probate" role="region" aria-labelledby="faq-what-is-the-difference-between-a-probate-h">
+            <p>A probate conservatorship addresses adults who cannot manage their personal care or finances due to age, illness, or disability. An LPS conservatorship applies to individuals who meet California's statutory definition of grave disability because of a qualifying mental health or substance-use condition and is governed by a separate legal framework from probate conservatorships.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d3">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-who-can-be-appointed-as-a-conservator-h" aria-expanded="false" aria-controls="faq-who-can-be-appointed-as-a-conservator" onclick="toggleFaq(this)">
+              Who can be appointed as a conservator?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-who-can-be-appointed-as-a-conservator" role="region" aria-labelledby="faq-who-can-be-appointed-as-a-conservator-h">
+            <p>California courts generally give preference to a spouse, adult child, or other close relative, but any competent adult can petition to serve, and the court will consider who is best able to act in the proposed conservatee's interest. Where family members disagree over who should serve, the court resolves the dispute based on the conservatee's best interests.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d4">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-are-signs-of-conservatorship-abuse-h" aria-expanded="false" aria-controls="faq-what-are-signs-of-conservatorship-abuse" onclick="toggleFaq(this)">
+              What are signs of conservatorship abuse?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-are-signs-of-conservatorship-abuse" role="region" aria-labelledby="faq-what-are-signs-of-conservatorship-abuse-h">
+            <p>Warning signs include unexplained withdrawals or transfers from the conservatee's accounts, failure to file required accountings, isolating the conservatee from family and friends, neglecting their medical or personal care needs, and living arrangements that appear to benefit the conservator more than the conservatee.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d5">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-how-do-i-stop-a-conservatorship-h" aria-expanded="false" aria-controls="faq-how-do-i-stop-a-conservatorship" onclick="toggleFaq(this)">
+              How do I stop a conservatorship?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-how-do-i-stop-a-conservatorship" role="region" aria-labelledby="faq-how-do-i-stop-a-conservatorship-h">
+            <p>If a petition has been filed and you believe a conservatorship isn't necessary, you or another interested party can file a formal objection before the hearing, present evidence that less restrictive alternatives exist, and ask the court to deny the petition. If a conservatorship has already been granted, interested parties, including the conservatee, can later petition the court to terminate it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d6">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-is-conservatorship-abuse-h" aria-expanded="false" aria-controls="faq-what-is-conservatorship-abuse" onclick="toggleFaq(this)">
+              What is conservatorship abuse?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-is-conservatorship-abuse" role="region" aria-labelledby="faq-what-is-conservatorship-abuse-h">
+            <p>Conservatorship abuse occurs when a conservator uses their court-granted authority against the conservatee's interests rather than for their protection, for example by mismanaging or misappropriating assets, isolating the conservatee from family, or neglecting their medical or personal care. Suspected abuse can be reported to the court and may support a petition to remove the conservator.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-col">
+        <div class="faq-item reveal reveal-d1">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-can-a-conservatorship-be-contested-before-it-h" aria-expanded="false" aria-controls="faq-can-a-conservatorship-be-contested-before-it" onclick="toggleFaq(this)">
+              Can a conservatorship be contested before it's granted?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-can-a-conservatorship-be-contested-before-it" role="region" aria-labelledby="faq-can-a-conservatorship-be-contested-before-it-h">
+            <p>Yes. The proposed conservatee or other interested parties can object to a conservatorship petition, argue that less restrictive alternatives exist, or contest who should be appointed. California requires clear and convincing evidence that the statutory grounds for a conservatorship are satisfied, and probate conservatorships must be tailored as the least restrictive alternative needed to protect the proposed conservatee.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d2">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-how-do-i-remove-a-conservator-who-h" aria-expanded="false" aria-controls="faq-how-do-i-remove-a-conservator-who" onclick="toggleFaq(this)">
+              How do I remove a conservator who isn't fulfilling their duties?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-how-do-i-remove-a-conservator-who" role="region" aria-labelledby="faq-how-do-i-remove-a-conservator-who-h">
+            <p>An interested party can petition the probate court to remove a conservator for failing to provide adequate care, mismanaging assets, or otherwise acting against the conservatee's best interests. The court can appoint a successor conservator and, where warranted, order the removed conservator to account for and repay any losses.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d3">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-can-a-conservatorship-be-terminated-h" aria-expanded="false" aria-controls="faq-can-a-conservatorship-be-terminated" onclick="toggleFaq(this)">
+              Can a conservatorship be terminated?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-can-a-conservatorship-be-terminated" role="region" aria-labelledby="faq-can-a-conservatorship-be-terminated-h">
+            <p>Yes. A conservatorship can be terminated if the conservatee regains capacity, or in the case of an LPS conservatorship, when it is no longer necessary. Interested parties, including the conservatee, may petition the court to end the conservatorship and restore the person's full legal rights.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d4">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-how-do-i-remove-a-conservator-h" aria-expanded="false" aria-controls="faq-how-do-i-remove-a-conservator" onclick="toggleFaq(this)">
+              How do I remove a conservator?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-how-do-i-remove-a-conservator" role="region" aria-labelledby="faq-how-do-i-remove-a-conservator-h">
+            <p>Removing a conservator generally starts with documenting your concerns, whether that involves missing money, neglected care, or a pattern of decisions that don't serve the conservatee. An interested party then petitions the probate court, which can suspend or remove the conservator and appoint a successor while the matter is resolved.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d5">
+          <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-are-the-alternatives-to-conservatorship-h" aria-expanded="false" aria-controls="faq-what-are-the-alternatives-to-conservatorship" onclick="toggleFaq(this)">
+              What are the alternatives to conservatorship?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-are-the-alternatives-to-conservatorship" role="region" aria-labelledby="faq-what-are-the-alternatives-to-conservatorship-h">
+            <p>Conservatorship is meant to be used only when less restrictive options aren't sufficient. Depending on the person's needs, alternatives can include a durable power of attorney, an advance health care directive, supported decision-making arrangements, or a trust already in place to manage assets. Which alternative fits, if any, depends on whether valid documents exist and the person's current capacity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+  <div class="why-us-inner">
+    <div class="why-us-eyebrow reveal">Why McLellan Law Group</div>
+    <h2 class="why-us-title reveal reveal-d1">Results-Driven.<em>Personally Invested.</em></h2>
+    <div class="why-us-grid">
+      <div class="why-us-item reveal reveal-d1">
+        <div class="why-us-num">01</div>
+        <strong>Boutique Firm Attention</strong>
+        <span>You work directly with an attorney, not a paralegal or case manager. We keep our caseload intentionally small so every client gets full attention.</span>
+      </div>
+      <div class="why-us-item reveal reveal-d2">
+        <div class="why-us-num">02</div>
+        <strong>Silicon Valley Focus</strong>
+        <span>Based in Saratoga, we know California trust and probate law and the local court landscape inside out, from Santa Clara County to the broader Bay Area.</span>
+      </div>
+      <div class="why-us-item reveal reveal-d3">
+        <div class="why-us-num">03</div>
+        <strong>Proven Track Record</strong>
+        <span>From contested conservatorship appointments to abuse investigations, our attorneys have protected vulnerable individuals and their families throughout Silicon Valley.</span>
+      </div>
+      <div class="why-us-item reveal reveal-d4">
+        <div class="why-us-num">04</div>
+        <strong>Free Consultation</strong>
+        <span>We offer a complimentary initial consultation so you can understand your rights and options before making any commitment.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="notable-results">
+  <div class="section-eyebrow reveal">Track Record</div>
+  <h2 class="reveal reveal-d1">Notable Results</h2>
+  <div class="results">
+    <div class="results-grid">
+      <div class="result-card reveal reveal-d2">
+        <span class="tag">Trust &amp; Probate Litigation</span>
+        <h3>Restraining Order Restoring Spousal Access</h3>
+        <p>Obtained an elder abuse restraining order after a contested hearing restoring a wife's access to her elderly husband, whose temporary conservator had cut off all contact, and barring interference with her visits and with information about his care and whereabouts.</p>
+      </div>
+    </div>
+    <p class="results-disclaimer">These results are provided for informational purposes only. Prior results do not guarantee a similar outcome, and every matter turns on its own facts and law. Representative matters include results obtained in Mr. McLellan's prior practice.</p>
+  </div>
+</section>
+
+<section class="emp-testimonials">
+  <div class="section-eyebrow reveal">Client Reviews</div>
+  <h2 class="reveal reveal-d1">What Our Clients Say</h2>
+  <div class="emp-carousel reveal reveal-d2" id="empCarousel">
+    <div class="emp-carousel-track" id="empTrack">
+      <div class="emp-test-card">
+        <div class="stars">★★★★★</div>
+        <span class="quote">"Steven's ability to bring my case to settlement while keeping my focus on the bigger picture was most impressive. I would hire Steven again in a heartbeat."</span>
+        <span class="author">Benjamin</span>
+      </div>
+      <div class="emp-test-card">
+        <div class="stars">★★★★★</div>
+        <span class="quote">"Claire was nothing short of incredible. Always available, prompt, organized, and strategic. She won me a large settlement and I would highly recommend her."</span>
+        <span class="author">Pete</span>
+      </div>
+      <div class="emp-test-card">
+        <div class="stars">★★★★★</div>
+        <span class="quote">"I recommend Attorney Claire Melehani, whose efforts were immediate, determined, analytical, well considered, and constant. Claire worked hard to build a strong, strategic, and effective case to ensure a positive resolution."</span>
+        <span class="author">Anonymous</span>
+      </div>
+      <div class="emp-test-card">
+        <div class="stars">★★★★★</div>
+        <span class="quote">"We worked with Claire and Steven and were very impressed with their professionalism and patience. They were quick to get the facts and helped us get a clear game plan figured out for a complicated situation."</span>
+        <span class="author">Wendy</span>
+      </div>
+      <div class="emp-test-card">
+        <div class="stars">★★★★★</div>
+        <span class="quote">"Claire and Steven are not only incredibly knowledgeable but very supportive. They actually consider the issues and advise you on what's best for you, not just what costs the most. I feel very fortunate to have worked with them."</span>
+        <span class="author">Jordan</span>
+      </div>
+    </div>
+  </div>
+  <div class="emp-carousel-dots" id="empDots">
+    <button class="emp-dot active" onclick="goToEmp(0)"></button>
+    <button class="emp-dot" onclick="goToEmp(1)"></button>
+    <button class="emp-dot" onclick="goToEmp(2)"></button>
+    <button class="emp-dot" onclick="goToEmp(3)"></button>
+    <button class="emp-dot" onclick="goToEmp(4)"></button>
+  </div>
+  <p class="mlg-aviso-resultados">Results depend on the specific facts and law of each matter. Prior results do not guarantee or predict a similar outcome in any other case.</p>
+</section>
+
+<section class="cta-banner" id="contact">
+  <h2 class="reveal">Concerned About a Loved One?<em>Let's Talk.</em></h2>
+  <p class="reveal reveal-d1">Based in Saratoga, serving Silicon Valley, Santa Clara County, and the Bay Area.</p>
+  <a href="https://mclellanlawgroup.lawbrokr.com/?landed_url=https%3A%2F%2Fwww.mclellanlawgroup.com%2Fconservatorship-disputes&engaged_url=https%3A%2F%2Fwww.mclellanlawgroup.com%2Fcontact-us" class="btn-gold reveal reveal-d2">Request a Free Consultation →</a>
+</section>
+
+<div class="maps-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.5!2d-122.0231!3d37.2638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b5b5b5b5b5%3A0x0!2s20665+4th+St+%23202%2C+Saratoga%2C+CA+95070!5e0!3m2!1sen!2sus!4v1"
+    width="100%" height="300" style="border:0 !important; display:block !important;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" title="McLellan Law Group, 20665 4th St #202, Saratoga, CA 95070">
+  </iframe>
 </div>
+</div>
+
+<script>
+
+function toggleFaq(btn) {
+  // El boton ahora vive dentro de un H3, asi que el contenedor ya no es el
+  // padre directo. closest() lo encuentra sin importar cuantos niveles haya.
+  var item = btn.closest('.faq-item');
+  var answer = item.querySelector('.faq-answer');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){
+    el.classList.remove('open');
+    el.querySelector('.faq-answer').style.setProperty('max-height', '0px', 'important');
+    // Sin esto el lector de pantalla sigue anunciando "expandido".
+    var b = el.querySelector('.faq-question');
+    if (b) b.setAttribute('aria-expanded', 'false');
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    answer.style.setProperty('max-height', answer.scrollHeight + 'px', 'important');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+// Si la URL trae el ancla de una pregunta, se abre sola y queda a la vista.
+// Es lo que hace util tener un link por pregunta.
+(function(){
+  function abrirDelHash(){
+    var h = location.hash.slice(1);
+    if (!h) return;
+    var a = document.getElementById(h) || document.getElementById(h.replace(/-h$/, ''));
+    if (!a || !a.classList.contains('faq-answer')) return;
+    var b = document.getElementById(a.id + '-h');
+    if (b && b.getAttribute('aria-expanded') !== 'true') b.click();
+    setTimeout(function(){ a.scrollIntoView({block: 'center'}); }, 60);
+  }
+  window.addEventListener('hashchange', abrirDelHash);
+  window.addEventListener('load', abrirDelHash);
+})();
+
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ observer.observe(el); });
+})();
+
+
+(function(){
+  var track = document.getElementById('empTrack');
+  var dots = document.querySelectorAll('#empDots .emp-dot');
+  var current = 0, total = dots.length, startX = 0, timer;
+  function goToEmp(n){
+    current = (n + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach(function(d,i){ d.classList.toggle('active', i===current); });
+  }
+  window.goToEmp = goToEmp;
+  function next(){ goToEmp(current+1); }
+  timer = setInterval(next, 5000);
+  var el = document.getElementById('empCarousel');
+  el.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; clearInterval(timer); }, {passive:true});
+  el.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - startX;
+    if(Math.abs(dx)>40){ goToEmp(dx<0 ? current+1 : current-1); }
+    timer = setInterval(next, 5000);
+  }, {passive:true});
+})();
+
+// Red de seguridad: si el observador no llega a disparar, nada queda invisible.
+setTimeout(function(){
+  document.querySelectorAll('#mlgE-conservatorship-disputes .reveal:not(.in-view)').forEach(function(el){
+    if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in-view');
+  });
+}, 1200);
+</script>
+
+<!-- Datos estructurados de esta pagina. Ya van incluidos aca:
+     no hace falta un widget aparte. Si la pagina ya tiene uno con
+     este mismo JSON, borralo, o Google va a leer el FAQ dos veces. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a conservatorship of the person and of the estate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A conservatorship of the person gives the conservator authority over an individual's daily care, including housing, meals, and medical decisions. A conservatorship of the estate gives the conservator authority over the person's finances and assets. Courts can grant either type alone or both together, depending on the conservatee's needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a probate conservatorship and an LPS conservatorship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A probate conservatorship addresses adults who cannot manage their personal care or finances due to age, illness, or disability. An LPS conservatorship applies to individuals who meet California's statutory definition of grave disability because of a qualifying mental health or substance-use condition and is governed by a separate legal framework from probate conservatorships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who can be appointed as a conservator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California courts generally give preference to a spouse, adult child, or other close relative, but any competent adult can petition to serve, and the court will consider who is best able to act in the proposed conservatee's interest. Where family members disagree over who should serve, the court resolves the dispute based on the conservatee's best interests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are signs of conservatorship abuse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Warning signs include unexplained withdrawals or transfers from the conservatee's accounts, failure to file required accountings, isolating the conservatee from family and friends, neglecting their medical or personal care needs, and living arrangements that appear to benefit the conservator more than the conservatee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a conservatorship be contested before it's granted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The proposed conservatee or other interested parties can object to a conservatorship petition, argue that less restrictive alternatives exist, or contest who should be appointed. California requires clear and convincing evidence that the statutory grounds for a conservatorship are satisfied, and probate conservatorships must be tailored as the least restrictive alternative needed to protect the proposed conservatee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove a conservator who isn't fulfilling their duties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An interested party can petition the probate court to remove a conservator for failing to provide adequate care, mismanaging assets, or otherwise acting against the conservatee's best interests. The court can appoint a successor conservator and, where warranted, order the removed conservator to account for and repay any losses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a conservatorship be terminated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A conservatorship can be terminated if the conservatee regains capacity, or in the case of an LPS conservatorship, when it is no longer necessary. Interested parties, including the conservatee, may petition the court to end the conservatorship and restore the person's full legal rights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop a conservatorship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a petition has been filed and you believe a conservatorship isn't necessary, you or another interested party can file a formal objection before the hearing, present evidence that less restrictive alternatives exist, and ask the court to deny the petition. If a conservatorship has already been granted, interested parties, including the conservatee, can later petition the court to terminate it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is conservatorship abuse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conservatorship abuse occurs when a conservator uses their court-granted authority against the conservatee's interests rather than for their protection, for example by mismanaging or misappropriating assets, isolating the conservatee from family, or neglecting their medical or personal care. Suspected abuse can be reported to the court and may support a petition to remove the conservator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove a conservator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Removing a conservator generally starts with documenting your concerns, whether that involves missing money, neglected care, or a pattern of decisions that don't serve the conservatee. An interested party then petitions the probate court, which can suspend or remove the conservator and appoint a successor while the matter is resolved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the alternatives to conservatorship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conservatorship is meant to be used only when less restrictive options aren't sufficient. Depending on the person's needs, alternatives can include a durable power of attorney, an advance health care directive, supported decision-making arrangements, or a trust already in place to manage assets. Which alternative fits, if any, depends on whether valid documents exist and the person's current capacity."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mclellanlawgroup.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Trust & Probate Litigation",
+      "item": "https://www.mclellanlawgroup.com/trust-probate"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Conservatorships",
+      "item": "https://www.mclellanlawgroup.com/conservatorship-disputes"
+    }
+  ]
+}
+</script>
