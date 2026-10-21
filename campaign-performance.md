@@ -9,6 +9,7 @@ sin que la deliverability contamine el número.
 
 | Fecha | Campaña | Audiencia | Env. | Opens | Clicks | CTOR |
 |---|---|---|---:|---:|---:|---:|
+| Oct 20 | *(envío post-import de la lista de 1500)* | Todos | 1477 | 21.7% | 0.54% | 2.5% |
 | Oct 06 | Asked to sign today | Todos | 1271 | 17.8% | 0.48% | 2.7% |
 | Sep 23 | Your Job Suddenly Feels Like They Want You Gone | Todos | 1281 | 22.1% | 0.32% | 1.4% |
 | Sep 01 | Your Job Changed Suddenly. Should You Be Worried? | Todos | 1285 | 8.8% | 0.31% | 3.5% |
@@ -104,3 +105,27 @@ medir si lo anterior funciona.
 
 - Columna de pestaña (Principal/Promociones) en cada envío nuevo.
 - Si el tracking de clics estuvo activo en todos los envíos del historial.
+
+## Envío del 20 oct 2026 — primero sobre la lista de 1500
+
+| Métrica | Valor | Lectura |
+|---|---|---|
+| Entregados | 1477 de 1498 | |
+| Opens | 21.7% (321 únicos) | grupo alto → probable Principal |
+| Total opens | 421 | 1.3 aperturas por persona |
+| Clicks | 0.54% (8 únicos, 10 totales) | |
+| CTOR | 2.5% | promedio histórico, sin mejora |
+| Bajas | 1.2% (17) | **2.6x el promedio histórico de 6.6 por campaña** |
+| Rebotes | 1.4% (21) | alto para lista ya trabajada |
+| Abuse reports | 0 | lo único tranquilizador |
+
+**Hay datos de clics, así que el tracking de clics seguía ENCENDIDO.** La
+recomendación principal de deliverability no se había aplicado en este envío.
+
+**Bajas y rebotes apuntan a los 428 contactos nuevos de CallRail.** Nunca se
+suscribieron a un newsletter: dejaron un teléfono o un formulario en el sitio.
+21 rebotes sobre ~428 direcciones nuevas es ~4.9%, típico de lista fría.
+
+Riesgo: bajas y rebotes altos degradan la reputación de envío, que es
+exactamente la causa del problema de Promociones que se está tratando de
+resolver. Importar leases fríos puede estar empeorando lo que se quiere arreglar.
