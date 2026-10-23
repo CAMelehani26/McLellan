@@ -146,7 +146,9 @@ def build(path, scope):
     css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
 
     body = re.search(r'<body>(.*)</body>', src, re.S).group(1)
-    body = re.sub(r'<nav\b.*?</nav>', '', body, flags=re.S)
+    # Solo el menu del sitio: la calculadora de intereses usa otro <nav> para
+    # la barra de pasos, y sin el su script se cae.
+    body = re.sub(r'<nav class="nav">.*?</nav>', '', body, count=1, flags=re.S)
     body = re.sub(r'<div class="mobile-menu".*?\n</div>\n', '', body, flags=re.S)
 
     # Los estilos inline tienen que llevar !important tambien: sin eso, el
