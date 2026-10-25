@@ -471,3 +471,14 @@ Wrongful Termination Attorneys | Saratoga CA
 McLellan Law Group represents employees in wrongful termination cases in Saratoga, CA. Fired for illegal reasons?
 ```
 
+### `/free-guides`
+
+**Title** (43)
+```
+Free Legal Guides | McLellan Law Group, LLP
+```
+
+**Description** (155)
+```
+Free guides from McLellan Law Group, LLP on California unclaimed money, severance agreements, the WARN Act, buying a home, dog laws, and choosing a lawyer.
+```
