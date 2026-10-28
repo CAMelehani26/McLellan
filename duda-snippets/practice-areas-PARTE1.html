@@ -386,6 +386,9 @@ html, body { overflow-x:hidden; }
 .mlgE-practice-areas .section-eyebrow, .mlgE-practice-areas .why-us-eyebrow, .mlgE-practice-areas .eyebrow { font-size:18px !important; letter-spacing:4px !important; }
 }
 .mlgE-practice-areas .emp-hero { border-bottom:12px solid #c9a96e !important; }
+/* Deja lugar al menu de Duda, que va encima del hero: sin esto el pill queda tapado. */
+.mlgE-practice-areas .emp-hero { padding-top:96px !important; }
+@media(max-width:768px) { .mlgE-practice-areas .emp-hero { padding-top:72px !important; } }
 .mlgE-practice-areas .detail-block p, .mlgE-practice-areas .employers-section > p, .mlgE-practice-areas .employers-intro-text p, .mlgE-practice-areas .employees-intro-text p, .mlgE-practice-areas .employees-section > p, .mlgE-practice-areas .faq-answer p, .mlgE-practice-areas .emp-test-card .quote, .mlgE-practice-areas .why-us-item span, .mlgE-practice-areas .paga-alert p, .mlgE-practice-areas .employer-item-text span, .mlgE-practice-areas .about p, .mlgE-practice-areas .mlg-quote, .mlgE-practice-areas .quote, .mlgE-practice-areas .lawsuits p, .mlgE-practice-areas .detail-section p, .mlgE-practice-areas .bio-block p, .mlgE-practice-areas .result-card span, .mlgE-practice-areas .atty-hero p {
   text-align:justify !important;
 }
@@ -489,7 +492,7 @@ html, body { overflow-x:hidden; }
   <div class="emp-hero-overlay"></div>
   <div class="hero-pill reveal">Saratoga, California</div>
   <h1 class="reveal reveal-d1">Our <em>Practice Areas</em></h1>
-  <p class="emp-hero-sub reveal reveal-d2">Employment law, business litigation, contract disputes, real estate litigation, trust &amp; probate, financial elder abuse, civil appeals, and guardian ad litem matters, for clients across Silicon Valley and the Bay Area.</p>
+  <p class="emp-hero-sub reveal reveal-d2">Employment, business, contracts, real estate, trust &amp; probate, elder abuse, appeals, and guardian ad litem, across Silicon Valley and the Bay Area.</p>
   <div class="emp-hero-ctas">
     <a href="#contact" class="btn-gold reveal reveal-d3">Get My Free Consultation →</a>
     <a href="#employment-law-group" class="btn-ghost reveal reveal-d4">Browse Practice Areas ↓</a>
