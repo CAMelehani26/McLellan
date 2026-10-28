@@ -48,6 +48,7 @@ FONTS = [
 SLUGS = {
     'index':               '/',
     'business-litigation': '/civil-litigation',
+    'membership-and-shareholder-disputes': '/shareholder-disputes',
     'contact':             '/contact-us',
 }
 

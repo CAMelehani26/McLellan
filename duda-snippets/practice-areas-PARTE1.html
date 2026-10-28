@@ -1,5 +1,4 @@
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1');
@@ -234,7 +233,7 @@ html, body { overflow-x:hidden; }
 .mlgE-practice-areas .why-us-eyebrow { font-size:11px !important; font-weight:700 !important; letter-spacing:2.5px !important; text-transform:uppercase !important; color:#c9a96e !important; margin-bottom:16px !important; }
 .mlgE-practice-areas .why-us-title { font-family:'Barlow Condensed',sans-serif !important; font-size:clamp(36px,5vw,56px) !important; font-weight:800 !important; color:#fff !important; line-height:1.05 !important; letter-spacing:-1px !important; text-transform:uppercase !important; margin-bottom:48px !important; }
 .mlgE-practice-areas .why-us-title em { display:block !important; font-style:italic !important; font-family:'DM Serif Display',serif !important; font-weight:400 !important; text-transform:none !important; color:#c9a96e !important; letter-spacing:-0.5px !important; }
-.mlgE-practice-areas .why-us-grid { display:grid !important; grid-template-columns:1fr 1fr; gap:2px !important; background:rgba(255,255,255,0.25) !important; border:2px solid rgba(255,255,255,0.25) !important; border-radius:16px !important; overflow:hidden; }
+.mlgE-practice-areas .why-us-grid { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:2px !important; background:rgba(255,255,255,0.25) !important; border:2px solid rgba(255,255,255,0.25) !important; border-radius:16px !important; overflow:hidden; }
 @media(max-width:600px) {
 .mlgE-practice-areas .why-us-grid { grid-template-columns:1fr; }
 }
@@ -374,7 +373,7 @@ html, body { overflow-x:hidden; }
 .mlgE-practice-areas .emp-dot.active { background:#c9a96e !important; }
 @media(min-width:769px) {
 .mlgE-practice-areas .employee-faq { max-width:1440px !important; }
-.mlgE-practice-areas .employee-faq .faq-list { display:grid !important; grid-template-columns:1fr 1fr; column-gap:48px; align-items:start; }
+.mlgE-practice-areas .employee-faq .faq-list { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:48px; align-items:start; }
 }
 .mlgE-practice-areas .emp-hero { min-height:calc(100svh - 56px) !important; }
 @media(min-width:769px) {
@@ -478,7 +477,6 @@ html, body { overflow-x:hidden; }
   }
 }
 </style>
-
 <div class="mlgE-practice-areas">
 <a class="mlg-salto" href="#employment-law-group">Skip to content</a>
 
@@ -491,7 +489,7 @@ html, body { overflow-x:hidden; }
   <div class="emp-hero-overlay"></div>
   <div class="hero-pill reveal">Saratoga, California</div>
   <h1 class="reveal reveal-d1">Our <em>Practice Areas</em></h1>
-  <p class="emp-hero-sub reveal reveal-d2">Employment law, business litigation, contract disputes, real estate litigation, trust &amp; probate, and financial elder abuse, for clients across Silicon Valley and the Bay Area.</p>
+  <p class="emp-hero-sub reveal reveal-d2">Employment law, business litigation, contract disputes, real estate litigation, trust &amp; probate, financial elder abuse, civil appeals, and guardian ad litem matters, for clients across Silicon Valley and the Bay Area.</p>
   <div class="emp-hero-ctas">
     <a href="#contact" class="btn-gold reveal reveal-d3">Get My Free Consultation →</a>
     <a href="#employment-law-group" class="btn-ghost reveal reveal-d4">Browse Practice Areas ↓</a>
