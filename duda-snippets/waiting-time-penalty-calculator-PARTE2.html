@@ -1,0 +1,371 @@
+<div class="mlgE-waiting-time-penalty-calculator">
+<section class="content-section" id="calculadora">
+  <div class="content-inner">
+    <div class="section-eyebrow reveal">The Calculator</div>
+    <h2 class="reveal reveal-d1">What Your Late Final Paycheck May Be Worth</h2>
+
+    <div class="calc-card reveal reveal-d2">
+      <div class="calc-grid">
+        <div class="calc-campo">
+          <label for="calc-tipo">How were you paid?</label>
+          <select id="calc-tipo">
+            <option value="hora">By the hour</option>
+            <option value="semana">A weekly salary</option>
+            <option value="ano">An annual salary</option>
+          </select>
+        </div>
+
+        <div class="calc-campo" data-modo="hora">
+          <label for="calc-tarifa">Hourly rate</label>
+          <div class="calc-input-money"><span>$</span><input type="number" id="calc-tarifa" min="0" step="0.01" placeholder="25.00" inputmode="decimal"></div>
+        </div>
+        <div class="calc-campo" data-modo="hora">
+          <label for="calc-horas">Hours you usually worked per day</label>
+          <input type="number" id="calc-horas" min="0" max="24" step="0.5" placeholder="8" inputmode="decimal">
+        </div>
+
+        <div class="calc-campo" data-modo="semana" hidden>
+          <label for="calc-semanal">Weekly salary</label>
+          <div class="calc-input-money"><span>$</span><input type="number" id="calc-semanal" min="0" step="0.01" placeholder="1200.00" inputmode="decimal"></div>
+        </div>
+        <div class="calc-campo" data-modo="semana" hidden>
+          <label for="calc-dias-semana">Days you usually worked per week</label>
+          <input type="number" id="calc-dias-semana" min="1" max="7" step="1" placeholder="5" inputmode="numeric">
+        </div>
+
+        <div class="calc-campo" data-modo="ano" hidden>
+          <label for="calc-anual">Annual salary</label>
+          <div class="calc-input-money"><span>$</span><input type="number" id="calc-anual" min="0" step="100" placeholder="85000" inputmode="numeric"></div>
+        </div>
+        <div class="calc-campo" data-modo="ano" hidden>
+          <label for="calc-dias-ano">Days you usually worked per week</label>
+          <input type="number" id="calc-dias-ano" min="1" max="7" step="1" placeholder="5" inputmode="numeric">
+        </div>
+
+        <div class="calc-campo">
+          <label for="calc-vencia">Date your final wages were due</label>
+          <input type="date" id="calc-vencia">
+          <span class="calc-ayuda">Immediately if you were fired or laid off. Within 72 hours if you quit without notice.</span>
+        </div>
+        <div class="calc-campo">
+          <label for="calc-pagaron">Date you were actually paid</label>
+          <input type="date" id="calc-pagaron">
+          <span class="calc-ayuda">Leave this empty if you still have not been paid.</span>
+        </div>
+      </div>
+
+      <div class="calc-resultado" id="calc-resultado" role="status" aria-live="polite">
+        <div class="calc-resultado-vacio">Fill in the fields above and your estimate appears here.</div>
+      </div>
+
+      <p class="calc-aviso">This is an educational estimate, not legal advice and not a promise of recovery. The penalty applies only where an employer willfully failed to pay, and the actual amount depends on facts a calculator cannot see. Have an attorney review your situation before relying on any number.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="help-section">
+  <div class="help-inner">
+    <div class="section-eyebrow reveal">How It Works</div>
+    <h2 class="reveal reveal-d1">The Rule Behind the Number</h2>
+    <div class="help-columns">
+      <div class="help-item reveal reveal-d2"><span>California requires final wages to be paid promptly. Immediately at termination, or within 72 hours if you resigned without notice.</span></div>
+      <div class="help-item reveal reveal-d2"><span>If an employer willfully fails to pay everything owed at separation, Labor Code Section 203 allows a penalty of up to 30 days of your daily wages.</span></div>
+      <div class="help-item reveal reveal-d3"><span>The clock counts calendar days, not working days, and it stops at 30 days no matter how long the delay runs.</span></div>
+      <div class="help-item reveal reveal-d3"><span>The penalty runs regardless of how small the unpaid amount was, so a few hundred dollars in unpaid final wages can produce a penalty many times larger.</span></div>
+      <div class="help-item reveal reveal-d4"><span>Willful means the employer intentionally failed to pay. A genuine, good faith dispute over what was owed can defeat the penalty.</span></div>
+      <div class="help-item reveal reveal-d4"><span>Defective wage statements carry their own separate penalties under Labor Code Section 226, which this calculator does not estimate.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h2 class="reveal">Waiting Time Penalty FAQs</h2>
+  <div class="faq-columns">
+    <div class="faq-col">
+      <div class="faq-item reveal reveal-d1">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-when-are-my-final-wages-actually-due-h" aria-expanded="false" aria-controls="faq-when-are-my-final-wages-actually-due" onclick="toggleFaq(this)">
+              When are my final wages actually due?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-when-are-my-final-wages-actually-due" role="region" aria-labelledby="faq-when-are-my-final-wages-actually-due-h">
+          <p>It depends on how the employment ended. If your employer fired you or laid you off, all wages earned and unpaid are due immediately, at the time of termination. If you quit and gave at least 72 hours of notice, they are due on your last day. If you quit without notice, your employer has 72 hours. Those are the dates to enter above, and getting them right matters, because the penalty clock starts from the date payment was due rather than the date you asked for it.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-does-the-penalty-really-run-for-30-h" aria-expanded="false" aria-controls="faq-does-the-penalty-really-run-for-30" onclick="toggleFaq(this)">
+              Does the penalty really run for 30 days?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-does-the-penalty-really-run-for-30" role="region" aria-labelledby="faq-does-the-penalty-really-run-for-30-h">
+          <p>Up to 30 days, and the days are calendar days rather than working days. If your final wages were 40 days late, the penalty still stops at 30 days of pay. If they were 6 days late, it runs 6 days. The cap is why the calculator stops climbing after a month, and it is also why a long delay and a very long delay are worth the same.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-d3">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-what-does-willful-mean-here-h" aria-expanded="false" aria-controls="faq-what-does-willful-mean-here" onclick="toggleFaq(this)">
+              What does willful mean here?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-what-does-willful-mean-here" role="region" aria-labelledby="faq-what-does-willful-mean-here-h">
+          <p>Willful does not require bad motive or malice. It generally means the employer intentionally failed to pay wages it knew were due. An employer that simply did not get around to it can still be liable. What can defeat the penalty is a genuine, good faith dispute about whether the wages were owed at all. An employer that argues in good faith and loses may still avoid the penalty, which is one reason the number this calculator produces is an estimate rather than an entitlement.</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-col">
+      <div class="faq-item reveal reveal-d1">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-my-employer-paid-most-of-my-final-h" aria-expanded="false" aria-controls="faq-my-employer-paid-most-of-my-final" onclick="toggleFaq(this)">
+              My employer paid most of my final check but not all of it. Does that count?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-my-employer-paid-most-of-my-final" role="region" aria-labelledby="faq-my-employer-paid-most-of-my-final-h">
+          <p>It can. The obligation is to pay all wages owed at separation, which includes accrued unused vacation, earned commissions that are calculable, and any unpaid overtime or premium pay. A partial payment that leaves something out can still trigger the penalty, and the penalty is measured by your daily wage rather than by the amount left unpaid. That is why a small shortfall can produce a penalty far larger than the shortfall itself.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-how-long-do-i-have-to-bring-h" aria-expanded="false" aria-controls="faq-how-long-do-i-have-to-bring" onclick="toggleFaq(this)">
+              How long do I have to bring a waiting time penalty claim?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-how-long-do-i-have-to-bring" role="region" aria-labelledby="faq-how-long-do-i-have-to-bring-h">
+          <p>Deadlines vary by the claim you bring and by whether you file with the Labor Commissioner or in court, and more than one deadline can apply to the same facts. Because the shortest applicable period controls, it is worth having the dates checked early rather than assuming you have time. If your separation was recent, that is the best moment to have someone look at it.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-d3">
+        <h3 class="faq-h">
+            <button class="faq-question" type="button" id="faq-is-this-number-what-i-would-actually-h" aria-expanded="false" aria-controls="faq-is-this-number-what-i-would-actually" onclick="toggleFaq(this)">
+              Is this number what I would actually receive?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-is-this-number-what-i-would-actually" role="region" aria-labelledby="faq-is-this-number-what-i-would-actually-h">
+          <p>No. It is an estimate of one component of a possible claim, calculated from the figures you entered. A complete claim often includes the unpaid wages themselves, meal and rest period premiums, wage statement penalties, interest, and attorney fees, and it can also be reduced or defeated by facts the calculator cannot see. Treat the result as a reason to have the situation reviewed, not as a figure to rely on.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-banner" id="contact">
+  <h2 class="reveal">Was Your Final Paycheck Late?<em>Let's Talk.</em></h2>
+  <p class="reveal reveal-d1">Based in Saratoga, serving Silicon Valley, Santa Clara County, and the Bay Area.</p>
+  <a href="https://mclellanlawgroup.lawbrokr.com/?landed_url=https%3A%2F%2Fwww.mclellanlawgroup.com%2Fwaiting-time-penalty-calculator&engaged_url=https%3A%2F%2Fwww.mclellanlawgroup.com%2Fcontact-us" class="btn-gold reveal reveal-d2">Request a Free Consultation →</a>
+</section>
+
+<div class="maps-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.5!2d-122.0231!3d37.2638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b5b5b5b5b5%3A0x0!2s20665+4th+St+%23202%2C+Saratoga%2C+CA+95070!5e0!3m2!1sen!2sus!4v1"
+    width="100%" height="300" style="border:0 !important; display:block !important;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" title="McLellan Law Group, 20665 4th St #202, Saratoga, CA 95070">
+  </iframe>
+</div>
+</div>
+
+<script>
+(function(){
+  function abrirDelHash(){
+    var h = location.hash.slice(1);
+    if (!h) return;
+    var a = document.getElementById(h) || document.getElementById(h.replace(/-h$/, ''));
+    if (!a || !a.classList.contains('faq-answer')) return;
+    var b = document.getElementById(a.id + '-h');
+    if (b && b.getAttribute('aria-expanded') !== 'true') b.click();
+    setTimeout(function(){ a.scrollIntoView({block: 'center'}); }, 60);
+  }
+  window.addEventListener('hashchange', abrirDelHash);
+  window.addEventListener('load', abrirDelHash);
+})();
+
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ observer.observe(el); });
+})();
+
+
+// CALCULADORA DE WAITING TIME PENALTIES
+//
+// La cuenta es simple: salario diario por dias de demora, con tope de 30.
+// Lo que hay que cuidar son los bordes, porque un numero mal puesto en una
+// pagina de un estudio juridico es peor que no tener la pagina.
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var tipo = $('calc-tipo');
+  if (!tipo) return;
+
+  var TOPE = 30;   // Labor Code 203: hasta 30 dias de salario diario.
+
+  function verCampos(){
+    var modo = tipo.value;
+    document.querySelectorAll('[data-modo]').forEach(function(el){
+      el.hidden = el.getAttribute('data-modo') !== modo;
+    });
+  }
+
+  function num(id){
+    var v = parseFloat(($(id) || {}).value);
+    return isFinite(v) && v > 0 ? v : null;
+  }
+
+  function salarioDiario(){
+    if (tipo.value === 'hora') {
+      var tarifa = num('calc-tarifa'), horas = num('calc-horas');
+      if (!tarifa || !horas) return null;
+      // Mas de 24 horas en un dia no existe; el campo ya lo limita, pero el
+      // atributo max no impide escribirlo a mano.
+      if (horas > 24) return null;
+      return tarifa * horas;
+    }
+    if (tipo.value === 'semana') {
+      var sem = num('calc-semanal'), dias = num('calc-dias-semana');
+      if (!sem || !dias || dias > 7) return null;
+      return sem / dias;
+    }
+    var anual = num('calc-anual'), diasAno = num('calc-dias-ano');
+    if (!anual || !diasAno || diasAno > 7) return null;
+    return anual / 52 / diasAno;
+  }
+
+  function dias(){
+    var v = $('calc-vencia').value, p = $('calc-pagaron').value;
+    if (!v) return null;
+    var desde = new Date(v + 'T00:00:00');
+    // Sin fecha de pago se asume que todavia no pagaron, asi que corre hasta hoy.
+    var hasta = p ? new Date(p + 'T00:00:00') : new Date();
+    if (isNaN(desde) || isNaN(hasta)) return null;
+    var d = Math.floor((hasta - desde) / 86400000);
+    return d;
+  }
+
+  function plata(n){
+    return '$' + n.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+
+  function calcular(){
+    var caja = $('calc-resultado');
+    var diario = salarioDiario();
+    var d = dias();
+
+    if (diario === null || d === null) {
+      caja.innerHTML = '<div class="calc-resultado-vacio">Fill in the fields above and your estimate appears here.</div>';
+      return;
+    }
+    if (d < 0) {
+      caja.innerHTML = '<div class="calc-error">The payment date is before the date the wages were due. Check the two dates.</div>';
+      return;
+    }
+    if (d === 0) {
+      caja.innerHTML = '<div class="calc-error">Those dates show the wages were paid on time, so no waiting time penalty would apply.</div>';
+      return;
+    }
+
+    var contados = Math.min(d, TOPE);
+    var total = diario * contados;
+
+    caja.innerHTML =
+      '<div class="calc-etiqueta">Estimated penalty</div>' +
+      '<div class="calc-monto">' + plata(total) + '</div>' +
+      '<div class="calc-desglose">' + plata(diario) + ' per day &times; ' + contados +
+      (contados === 1 ? ' day' : ' days') + ' late.</div>' +
+      (d > TOPE
+        ? '<div class="calc-tope">Your wages were ' + d + ' days late, but the penalty stops at 30 days.</div>'
+        : '');
+  }
+
+  tipo.addEventListener('change', function(){ verCampos(); calcular(); });
+  ['calc-tarifa','calc-horas','calc-semanal','calc-dias-semana','calc-anual',
+   'calc-dias-ano','calc-vencia','calc-pagaron'].forEach(function(id){
+    var el = $(id);
+    if (el) el.addEventListener('input', calcular);
+  });
+
+  verCampos();
+})();
+
+
+</script>
+
+<!-- Datos estructurados de esta pagina (FAQPage). Ya van incluidos aca: no hace falta pegar un SCHEMA aparte. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When are my final wages actually due?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on how the employment ended. If your employer fired you or laid you off, all wages earned and unpaid are due immediately, at the time of termination. If you quit and gave at least 72 hours of notice, they are due on your last day. If you quit without notice, your employer has 72 hours. Those are the dates to enter above, and getting them right matters, because the penalty clock starts from the date payment was due rather than the date you asked for it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the penalty really run for 30 days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Up to 30 days, and the days are calendar days rather than working days. If your final wages were 40 days late, the penalty still stops at 30 days of pay. If they were 6 days late, it runs 6 days. The cap is why the calculator stops climbing after a month, and it is also why a long delay and a very long delay are worth the same."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does willful mean here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Willful does not require bad motive or malice. It generally means the employer intentionally failed to pay wages it knew were due. An employer that simply did not get around to it can still be liable. What can defeat the penalty is a genuine, good faith dispute about whether the wages were owed at all. An employer that argues in good faith and loses may still avoid the penalty, which is one reason the number this calculator produces is an estimate rather than an entitlement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My employer paid most of my final check but not all of it. Does that count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can. The obligation is to pay all wages owed at separation, which includes accrued unused vacation, earned commissions that are calculable, and any unpaid overtime or premium pay. A partial payment that leaves something out can still trigger the penalty, and the penalty is measured by your daily wage rather than by the amount left unpaid. That is why a small shortfall can produce a penalty far larger than the shortfall itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do I have to bring a waiting time penalty claim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deadlines vary by the claim you bring and by whether you file with the Labor Commissioner or in court, and more than one deadline can apply to the same facts. Because the shortest applicable period controls, it is worth having the dates checked early rather than assuming you have time. If your separation was recent, that is the best moment to have someone look at it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this number what I would actually receive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is an estimate of one component of a possible claim, calculated from the figures you entered. A complete claim often includes the unpaid wages themselves, meal and rest period premiums, wage statement penalties, interest, and attorney fees, and it can also be reduced or defeated by facts the calculator cannot see. Treat the result as a reason to have the situation reviewed, not as a figure to rely on."
+      }
+    }
+  ]
+}
+</script>

@@ -40,7 +40,8 @@ GRUPOS = {
     ],
     '/trust-probate': [
         'beneficiary-rights', 'conservatorship-disputes', 'contested-probate-matters',
-        'trustee-breach-of-fiduciary-duty', 'trustee-removal', 'will-contests',
+        'trustee-breach-of-fiduciary-duty', 'trustee-removal', 'trust-accounting',
+        'will-contests',
     ],
 }
 
