@@ -9,7 +9,7 @@ sin que la deliverability contamine el número.
 
 | Fecha | Campaña | Audiencia | Env. | Opens | Clicks | CTOR |
 |---|---|---|---:|---:|---:|---:|
-| Oct 20 | *(envío post-import de la lista de 1500)* | Todos | 1477 | 21.7% | 0.54% | 2.5% |
+| Oct 20 | Your Title Changed. Your Job Didn't. *(link de texto, sin botón)* | Todos | 1498 | **25.2%** | **0.68%** | 2.7% |
 | Oct 06 | Asked to sign today | Todos | 1271 | 17.8% | 0.48% | 2.7% |
 | Sep 23 | Your Job Suddenly Feels Like They Want You Gone | Todos | 1281 | 22.1% | 0.32% | 1.4% |
 | Sep 01 | Your Job Changed Suddenly. Should You Be Worried? | Todos | 1285 | 8.8% | 0.31% | 3.5% |
@@ -106,26 +106,40 @@ medir si lo anterior funciona.
 - Columna de pestaña (Principal/Promociones) en cada envío nuevo.
 - Si el tracking de clics estuvo activo en todos los envíos del historial.
 
-## Envío del 20 oct 2026 — primero sobre la lista de 1500
+## Envío del 20 oct 2026 — Your Title Changed. Your Job Didn't.
+
+Primero sobre la lista de 1500 y primero sin botón (CTA como link de texto).
+Cifras a 10 días; al día siguiente marcaba 21.7% / 0.54% y siguió subiendo.
 
 | Métrica | Valor | Lectura |
 |---|---|---|
-| Entregados | 1477 de 1498 | |
-| Opens | 21.7% (321 únicos) | grupo alto → probable Principal |
-| Total opens | 421 | 1.3 aperturas por persona |
-| Clicks | 0.54% (8 únicos, 10 totales) | |
-| CTOR | 2.5% | promedio histórico, sin mejora |
-| Bajas | 1.2% (17) | **2.6x el promedio histórico de 6.6 por campaña** |
-| Rebotes | 1.4% (21) | alto para lista ya trabajada |
-| Abuse reports | 0 | lo único tranquilizador |
+| Opens | **25.2%** | el más alto de todo el historial |
+| Clicks | **0.68%** | 2º de todos los envíos a lista completa |
+| CTOR | 2.7% | apenas sobre el promedio (~2.4%) |
+| Bajas | 1.2% (17) | 2.6x el promedio histórico de 6.6 |
+| Rebotes | 1.4% (21) | alto para lista trabajada |
+| Abuse reports | 0 | |
 
-**Hay datos de clics, así que el tracking de clics seguía ENCENDIDO.** La
-recomendación principal de deliverability no se había aplicado en este envío.
+Primer envío que queda en el top-2 de aperturas **y** de clics a la vez.
 
-**Bajas y rebotes apuntan a los 428 contactos nuevos de CallRail.** Nunca se
-suscribieron a un newsletter: dejaron un teléfono o un formulario en el sitio.
-21 rebotes sobre ~428 direcciones nuevas es ~4.9%, típico de lista fría.
+**Las aperturas maduran lentamente.** Hay que leer los reportes a 7-10 días,
+no al día siguiente. Al día 1 este marcaba 21.7%; cerró en 25.2%.
 
-Riesgo: bajas y rebotes altos degradan la reputación de envío, que es
-exactamente la causa del problema de Promociones que se está tratando de
-resolver. Importar leases fríos puede estar empeorando lo que se quiere arreglar.
+**El tracking de clics seguía ENCENDIDO** y aun así fue la mejor apertura
+registrada. Eso debilita la hipótesis de que el tracking de clics era lo que
+empujaba a Promociones. No conviene tocarlo ahora: hay que repetir esta
+configuración una vez más antes de cambiar nada.
+
+**Los clics siguen sin ser medibles.** 0.68% sobre 1498 son ~10 clics. La
+diferencia contra 0.48% son 3 clics. No alcanza para concluir que el link de
+texto funcionó mejor que el botón.
+
+**Bajas y rebotes siguen apuntando a los 428 de CallRail** (~4.9% de rebote
+sobre direcciones nuevas, típico de lista fría).
+
+## Plan de medición
+
+El próximo envío es un **test de replicación**: misma plantilla, mismo CTA de
+texto, misma configuración de tracking, mismo día y horario. Solo cambia el
+tema. Si vuelve a dar ~25%, la configuración actual es la buena y recién ahí
+conviene tocar una variable por vez.
