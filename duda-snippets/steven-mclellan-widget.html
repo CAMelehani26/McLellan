@@ -132,8 +132,8 @@ html, body { overflow-x:hidden; }
   color:#b9986a !important; font-weight:600 !important; margin-bottom:32px !important;
 }
 #mlg-steven-mclellan .lead {
-  font-family:'Barlow',sans-serif !important; font-style:normal !important; font-weight:600 !important;
-  font-size:clamp(24px, 2.6vw, 32px) !important; line-height:1.55 !important; color:#8a6d43 !important;
+  font-family:'DM Serif Display',serif !important; font-style:italic !important; font-weight:400 !important;
+  font-size:clamp(24px, 2.6vw, 32px) !important; line-height:1.5 !important; color:#1e3a3e !important;
   margin-bottom:40px !important;
 }
 #mlg-steven-mclellan .about-copy { display:flex !important; flex-direction:column; gap:20px !important; }
@@ -307,6 +307,24 @@ html, body { overflow-x:hidden; }
 #mlg-steven-mclellan .reveal-d6 { transition-delay:0.48s; }
 #mlg-steven-mclellan .reveal-d7 { transition-delay:0.56s; }
 #mlg-steven-mclellan h1.hero-name.hero-name { color:#f0ece4 !important; }
+#mlg-steven-mclellan .lead, #mlg-steven-mclellan .about-copy { max-width:760px !important; }
+#mlg-steven-mclellan .about-copy {
+  gap:22px !important; background:#faf8f3 !important;
+  border:2.5px solid rgba(185,152,106,0.35) !important;
+  padding:44px 48px !important;
+}
+#mlg-steven-mclellan .about-copy p, #mlg-steven-mclellan .about-copy .about-p, #mlg-steven-mclellan .about-copy .rec-block {
+  border:none !important; padding:0 !important; background:transparent !important;
+  font-size:18px !important; line-height:1.85 !important; color:#3a5254 !important; font-weight:500 !important;
+  text-align:left !important;
+}
+#mlg-steven-mclellan .about-copy .about-p strong { color:#8a6d43 !important; }
+#mlg-steven-mclellan .about-copy .rec-block ul { margin:12px 0 0 0 !important; }
+#mlg-steven-mclellan .about-copy .rec-block li { margin-bottom:6px !important; }
+@media(max-width:768px) {
+#mlg-steven-mclellan .about-copy { padding:28px 24px !important; }
+#mlg-steven-mclellan .about-copy p, #mlg-steven-mclellan .about-copy .about-p, #mlg-steven-mclellan .about-copy .rec-block { font-size:17px !important; }
+}
 
 /* Misma receta que el widget del Appellate Digest, que en Duda funciona bien:
    secciones a 100vw exacto; el hero desborda 2vw por lado solo en desktop y
