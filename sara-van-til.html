@@ -298,6 +298,23 @@ a { text-decoration:none; color:inherit; }
 .reveal-d6 { transition-delay:0.48s; }
 .reveal-d7 { transition-delay:0.56s; }
 
+
+/* About en un solo panel, como la home: una narrativa continua, sin una
+   tarjeta por parrafo. Las secciones de la derecha no se tocan. */
+.about-copy {
+  gap:22px !important; background:#faf8f3 !important;
+  border:2.5px solid rgba(185,152,106,0.35) !important;
+  padding:44px 48px !important;
+}
+.about-copy p, .about-copy .about-p, .about-copy .rec-block {
+  border:none !important; padding:0 !important; background:transparent !important;
+  font-size:18px !important; line-height:1.85 !important; color:#3a5254 !important; font-weight:500;
+  text-align:left !important;
+}
+.about-copy .about-p strong { color:#8a6d43 !important; }
+.about-copy .rec-block ul { margin:12px 0 0 0 !important; }
+.about-copy .rec-block li { margin-bottom:6px; }
+@media(max-width:768px) { .about-copy { padding:28px 24px !important; } .about-copy p, .about-copy .about-p, .about-copy .rec-block { font-size:17px !important; } }
 </style>
 <script src="/assets/barra-progreso.js" defer></script>
 </head>
