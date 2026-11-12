@@ -9,6 +9,7 @@ sin que la deliverability contamine el número.
 
 | Fecha | Campaña | Audiencia | Env. | Opens | Clicks | CTOR |
 |---|---|---|---:|---:|---:|---:|
+| Nov 02 | You Clocked Out. You Kept Working. *(misma config, lunes 18:00)* | Todos | ~1480 | **10.4%** | 0.28% | 2.7% |
 | Oct 20 | Your Title Changed. Your Job Didn't. *(link de texto, sin botón)* | Todos | 1498 | **25.2%** | **0.68%** | 2.7% |
 | Oct 06 | Asked to sign today | Todos | 1271 | 17.8% | 0.48% | 2.7% |
 | Sep 23 | Your Job Suddenly Feels Like They Want You Gone | Todos | 1281 | 22.1% | 0.32% | 1.4% |
@@ -137,9 +138,48 @@ texto funcionó mejor que el botón.
 **Bajas y rebotes siguen apuntando a los 428 de CallRail** (~4.9% de rebote
 sobre direcciones nuevas, típico de lista fría).
 
-## Plan de medición
+## Test de replicación (2 nov) — FALLÓ
 
-El próximo envío es un **test de replicación**: misma plantilla, mismo CTA de
-texto, misma configuración de tracking, mismo día y horario. Solo cambia el
-tema. Si vuelve a dar ~25%, la configuración actual es la buena y recién ahí
-conviene tocar una variable por vez.
+| | 20 oct | 2 nov |
+|---|---:|---:|
+| Plantilla, CTA de texto, línea del pie | idéntica | idéntica |
+| Opens | **25.2%** | **10.4%** |
+| Clicks | 0.68% | 0.28% |
+| **CTOR** | **2.7%** | **2.7%** |
+
+La configuración no replicó. El 25.2% no era la plantilla ni el CTA de texto.
+
+**El CTOR quedó idéntico: 2.7% en los dos.** Eso es lo más informativo del
+par. De la gente que abre, el mismo porcentaje hace clic en los dos envíos.
+El contenido rinde igual; lo único que cambia es a cuánta gente llega.
+En todo el historial el CTOR de envíos a lista completa va de 1.3% a 3.5%
+(media ~2.4%) mientras las aperturas oscilan 2.4x. La variable es alcance,
+no calidad.
+
+**El cambio de día/horario no lo explica.** El 2 nov salió lunes 18:00 en vez
+de martes 19:00, pero el historial descarta esas dos variables: hubo lunes de
+22.9% (6 abr) y de 10.9% (4 may); hubo 19:00 de 25.2% (20 oct) y de 8.9%
+(1 sep).
+
+**La forma del asunto tampoco.** Las dos frases cortas declarativas estaban
+en los dos: "Your Title Changed. Your Job Didn't." (25.2%) y "You Clocked
+Out. You Kept Working." (10.4%).
+
+## Hipótesis descartadas hasta ahora
+
+1. Fórmula del asunto (2ª persona vs pregunta) — refutada por el historial completo.
+2. Botón vs link de texto / configuración de plantilla — refutada por este test.
+
+Lo que sobrevive: la bimodalidad es real y grande, y el único caso medido
+directamente mostró Principal vs Promociones. Nada más está confirmado.
+
+## Lo único que falta medir
+
+**La pestaña de cada envío.** Hasta tenerla no tiene sentido seguir
+proponiendo teorías de contenido. Con `category:promotions "<asunto>"`:
+
+- [ ] Your Title Changed. Your Job Didn't. (25.2%)
+- [ ] You Clocked Out. You Kept Working. (10.4%)
+
+Si el primero está en Principal y el segundo en Promociones, queda confirmado
+por segunda vez y el problema pasa a ser reputación de envío, no contenido.
