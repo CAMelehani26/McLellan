@@ -229,6 +229,24 @@ html, body { overflow-x:hidden; }
 #mlg-gabrielle-garcia .reveal-d5 { transition-delay:0.4s; }
 #mlg-gabrielle-garcia .reveal-d6 { transition-delay:0.48s; }
 #mlg-gabrielle-garcia .reveal-d7 { transition-delay:0.56s; }
+#mlg-gabrielle-garcia .lead, #mlg-gabrielle-garcia .about-copy { max-width:760px !important; }
+#mlg-gabrielle-garcia .about-copy {
+  gap:22px !important; background:#faf8f3 !important;
+  border:2.5px solid rgba(185,152,106,0.35) !important;
+  padding:44px 48px !important;
+}
+#mlg-gabrielle-garcia .about-copy p, #mlg-gabrielle-garcia .about-copy .about-p, #mlg-gabrielle-garcia .about-copy .rec-block {
+  border:none !important; padding:0 !important; background:transparent !important;
+  font-size:18px !important; line-height:1.85 !important; color:#3a5254 !important; font-weight:500 !important;
+  text-align:left !important;
+}
+#mlg-gabrielle-garcia .about-copy .about-p strong { color:#8a6d43 !important; }
+#mlg-gabrielle-garcia .about-copy .rec-block ul { margin:12px 0 0 0 !important; }
+#mlg-gabrielle-garcia .about-copy .rec-block li { margin-bottom:6px !important; }
+@media(max-width:768px) {
+#mlg-gabrielle-garcia .about-copy { padding:28px 24px !important; }
+#mlg-gabrielle-garcia .about-copy p, #mlg-gabrielle-garcia .about-copy .about-p, #mlg-gabrielle-garcia .about-copy .rec-block { font-size:17px !important; }
+}
 
 /* Misma receta que el widget del Appellate Digest, que en Duda funciona bien:
    secciones a 100vw exacto; el hero desborda 2vw por lado solo en desktop y
