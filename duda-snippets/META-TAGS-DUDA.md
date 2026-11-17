@@ -375,6 +375,18 @@ Trustee Removal Attorneys | Saratoga CA
 McLellan Law Group represents beneficiaries seeking to remove a trustee for mismanagement, conflicts of interest, or breach of duty in Saratoga, CA.
 ```
 
+### `/trust-accounting`
+
+**Title** (40)
+```
+Trust Accounting Attorneys | Saratoga CA
+```
+
+**Description** (139)
+```
+McLellan Law Group helps beneficiaries obtain and review trust accountings, and petitions to compel them under the California Probate Code.
+```
+
 ### `/unpaid-wages`
 
 **Title** (47)
@@ -459,3 +471,14 @@ Wrongful Termination Attorneys | Saratoga CA
 McLellan Law Group represents employees in wrongful termination cases in Saratoga, CA. Fired for illegal reasons?
 ```
 
+### `/free-guides`
+
+**Title** (43)
+```
+Free Legal Guides | McLellan Law Group, LLP
+```
+
+**Description** (155)
+```
+Free guides from McLellan Law Group, LLP on California unclaimed money, severance agreements, the WARN Act, buying a home, dog laws, and choosing a lawyer.
+```
